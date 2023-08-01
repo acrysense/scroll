@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SCROLL</title>
+	<meta property="og:title" content="SCROLL">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SCROLL">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__left">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</a>
+				</div>
+				<div class="header__center">
+					<div class="c-search header__search">
+						<div class="c-search__inner">
+							<input type="text" class="c-search__input" placeholder="Поиск">
+						</div>
+					</div>
+					<button class="ai-btn header__ai">
+						<span>Спросить у ИИ</span>
+						<img src="img/ai-img.png" alt="AI">
+					</button>
+				</div>
+				<div class="header__right">
+					<div class="header__controls header__controls--first">
+						<a href="#" class="header__btn header__btn--mobile header__btn--desktop-hidden">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__controls header__controls--second">
+						<a href="#" class="header__btn">
+							<span>Войти</span>
+						</a>
+						<hamburger class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</hamburger>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+	<!-- menu -->
+	<div class="menu">
+		<div class="menu__wrap">
+			<div class="menu__main">
+				<div class="menu__block">
+					<nav class="nav menu__nav">
+						<ul class="nav__list">
+							<li class="nav__item is--active">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-01"></use>
+									</svg>
+									<span>Пособия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-02"></use>
+									</svg>
+									<span>Пенсия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-03"></use>
+									</svg>
+									<span>Льготы</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-04"></use>
+									</svg>
+									<span>Семья</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-05"></use>
+									</svg>
+									<span>Долги</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-06"></use>
+									</svg>
+									<span>Договоры и сделки</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-07"></use>
+									</svg>
+									<span>Суды</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-08"></use>
+									</svg>
+									<span>Транспорт</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-09"></use>
+									</svg>
+									<span>Трудовое законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-10"></use>
+									</svg>
+									<span>Недвижимость</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-11"></use>
+									</svg>
+									<span>Уголовное законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-12"></use>
+									</svg>
+									<span>Наследственные споры</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-13"></use>
+									</svg>
+									<span>Защита прав потребителей</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-14"></use>
+									</svg>
+									<span>Административные правонарушения</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-15"></use>
+									</svg>
+									<span>Регистрация ЮЛ и ИП</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-16"></use>
+									</svg>
+									<span>Банкротство физ лица</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-17"></use>
+									</svg>
+									<span>Помощь иностранным гражданам</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="menu__block">
+					<div class="menu__controls">
+						<button class="ai-btn ai-btn--lg menu__ai">
+							<span>Спросить у ИИ</span>
+							<img src="img/ai-img.png" alt="AI">
+						</button>
+						<button class="menu__btn">
+							<span>Закладки</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile">
+							<span>Уведомления</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile menu__close">
+							<span>Закрыть</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="c-account menu__account">
+						<button class="c-account__inner">
+							<span class="c-account__name">Александр Македонский</span>
+							<span class="c-account__help">Аккаунт</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer class="footer menu__footer" id="footer">
+				<div class="footer-socmedia footer__socmedia">
+					<div class="footer-socmedia__wrapper">
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vcru"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-dzen"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-nav footer__nav">
+					<div class="footer-nav__wrapper">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Заказать рекламу</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О проекте</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Конфиденциальность</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Помощь</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вакансии</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<!-- end of footer -->
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- layout -->
+	<div class="layout">
+		<div class="container">
+			<div class="layout__wrap">
+				<div class="layout__left"></div>
+				<div class="layout__main">
+					<div class="layout__center">
+						<!-- error section -->
+						<div class="error">
+							<div class="error__wrapper">
+								<picture class="error__img">
+									<img src="img/500.svg" alt="500">
+								</picture>
+								<div class="error__body">
+									<h1 class="error__heading">Что-то пошло не так</h1>
+									<p class="error__description">Мы уже работаем над ошибкой</p>
+								</div>
+								<div class="error__info">
+									<p class="error__description">Попробуйте перезагрузить страницу или зайти через несколько минут</p>
+									<a href="index.html" class="error__btn btn btn--blue">Перезагрузить</a>
+								</div>
+							</div>
+						</div>
+						<!-- end of error section -->
+					</div>
+					<div class="layout__right"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of layout -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

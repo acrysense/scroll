@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SCROLL - Аудиоподкасты</title>
+	<meta property="og:title" content="SCROLL - Аудиоподкасты">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SCROLL - Аудиоподкасты">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__left">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</a>
+				</div>
+				<div class="header__center"></div>
+				<div class="header__right">
+					<div class="header__controls header__controls--first">
+						<a href="#" class="header__btn header__btn--mobile">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__controls header__controls--second">
+						<a href="#" class="header__btn">
+							<span>Войти</span>
+						</a>
+						<hamburger class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</hamburger>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+	<!-- menu -->
+	<div class="menu">
+		<div class="menu__wrap">
+			<div class="menu__main">
+				<div class="menu__block">
+					<nav class="nav menu__nav">
+						<ul class="nav__list">
+							<li class="nav__item is--active">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-01"></use>
+									</svg>
+									<span>Пособия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-02"></use>
+									</svg>
+									<span>Пенсия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-03"></use>
+									</svg>
+									<span>Льготы</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-04"></use>
+									</svg>
+									<span>Семья</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-05"></use>
+									</svg>
+									<span>Долги</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-06"></use>
+									</svg>
+									<span>Договоры и сделки</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-07"></use>
+									</svg>
+									<span>Суды</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-08"></use>
+									</svg>
+									<span>Транспорт</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-09"></use>
+									</svg>
+									<span>Трудовое законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-10"></use>
+									</svg>
+									<span>Недвижимость</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-11"></use>
+									</svg>
+									<span>Уголовное законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-12"></use>
+									</svg>
+									<span>Наследственные споры</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-13"></use>
+									</svg>
+									<span>Защита прав потребителей</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-14"></use>
+									</svg>
+									<span>Административные правонарушения</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-15"></use>
+									</svg>
+									<span>Регистрация ЮЛ и ИП</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-16"></use>
+									</svg>
+									<span>Банкротство физ лица</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-17"></use>
+									</svg>
+									<span>Помощь иностранным гражданам</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="menu__block">
+					<div class="menu__controls">
+						<button class="ai-btn ai-btn--lg menu__ai">
+							<span>Спросить у ИИ</span>
+							<img src="img/ai-img.png" alt="AI">
+						</button>
+						<button class="menu__btn">
+							<span>Закладки</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile">
+							<span>Уведомления</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile menu__close">
+							<span>Закрыть</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="c-account menu__account">
+						<button class="c-account__inner">
+							<span class="c-account__name">Александр Македонский</span>
+							<span class="c-account__help">Аккаунт</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer class="footer menu__footer" id="footer">
+				<div class="footer-socmedia footer__socmedia">
+					<div class="footer-socmedia__wrapper">
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vcru"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-dzen"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-nav footer__nav">
+					<div class="footer-nav__wrapper">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Заказать рекламу</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О проекте</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Конфиденциальность</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Помощь</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вакансии</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<!-- end of footer -->
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- layout -->
+	<div class="layout">
+		<div class="container">
+			<div class="layout__wrap">
+				<div class="layout__left layout__left--visible">
+					<div class="layout__sections layout__sticky">
+						<a href="#" class="back-btn layout__back">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+						</a>
+						<div class="nav-sections layout__nav-sections">
+							<ul class="nav-sections__list">
+								<li class="nav-sections__item">
+									<a href="#" class="nav-sections__link">Видео</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="#" class="nav-sections__link">Тренды</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="#" class="nav-sections__link">Лекции</a>
+								</li>
+								<li class="nav-sections__item is--active">
+									<a href="podcasts.html" class="nav-sections__link">Аудиоподкасты</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="#" class="nav-sections__link">Клуб юристов</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- footer -->
+					<footer class="footer layout__footer" id="footer">
+						<div class="footer-socmedia footer__socmedia">
+							<div class="footer-socmedia__wrapper">
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vcru"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-dzen"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-nav footer__nav">
+							<div class="footer-nav__wrapper">
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Заказать рекламу</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">О проекте</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Конфиденциальность</a>
+									</li>
+								</ul>
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Правила</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Помощь</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Вакансии</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+					<!-- end of footer -->
+				</div>
+				<div class="layout__main">
+					<div class="layout__center">
+						<div class="podcasts">
+							<div class="podcasts__wrapper">
+								<div class="podcasts__item">
+									<a href="podcast.html" class="podcasts__img">
+										<img src="img/podcasts-01.jpg" alt="Image">
+									</a>
+									<div class="podcasts__main">
+										<div class="podcasts__body">
+											<span class="podcasts__help">2 выпуск</span>
+											<a href="podcast.html" class="podcasts__name">Мойдодыр и нейросеть</a>
+											<span class="podcasts__description">В этом выпуске мы обсудили реакцию мозга на стрессовые ситуации; как управлять своим состоянием.</span>
+											<div class="podcasts__inner">
+												<a href="#" class="podcasts__text">Название подкаста</a>
+												<a href="#" class="podcasts__text">Александр Македонский</a>
+											</div>
+										</div>
+										<div class="podcasts__additional">
+											<a href="#" class="podcasts__play c-play">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-play"></use>
+												</svg>
+												<span>1 ч 20 мин</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="podcasts__item">
+									<a href="podcast.html" class="podcasts__img">
+										<img src="img/podcasts-01.jpg" alt="Image">
+									</a>
+									<div class="podcasts__main">
+										<div class="podcasts__body">
+											<span class="podcasts__help">2 выпуск</span>
+											<a href="podcast.html" class="podcasts__name">Мойдодыр и нейросеть</a>
+											<span class="podcasts__description">В этом выпуске мы обсудили реакцию мозга на стрессовые ситуации; как управлять своим состоянием.</span>
+											<div class="podcasts__inner">
+												<span class="podcasts__text">Название подкаста</span>
+												<span class="podcasts__text">Александр Македонский</span>
+											</div>
+										</div>
+										<div class="podcasts__additional">
+											<a href="#" class="podcasts__play c-play">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-play"></use>
+												</svg>
+												<span>1 ч 20 мин</span>
+											</a>
+											<button class="podcasts__favorites c-icon-btn">
+												<svg class="c-icon-btn__icon">
+													<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="podcasts__item">
+									<a href="podcast.html" class="podcasts__img">
+										<img src="img/podcasts-02.jpg" alt="Image">
+									</a>
+									<div class="podcasts__main">
+										<div class="podcasts__body">
+											<span class="podcasts__help">2 выпуск</span>
+											<a href="podcast.html" class="podcasts__name">Мойдодыр и нейросеть</a>
+											<span class="podcasts__description">В этом выпуске мы обсудили реакцию мозга на стрессовые ситуации; как управлять своим состоянием.</span>
+											<div class="podcasts__inner">
+												<span class="podcasts__text">Название подкаста</span>
+												<span class="podcasts__text">Александр Македонский</span>
+											</div>
+										</div>
+										<div class="podcasts__additional">
+											<a href="#" class="podcasts__play c-play">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-play"></use>
+												</svg>
+												<span>20 ч 20 мин</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="podcasts__item">
+									<a href="podcast.html" class="podcasts__img">
+										<img src="img/podcasts-03.jpg" alt="Image">
+									</a>
+									<div class="podcasts__main">
+										<div class="podcasts__body">
+											<span class="podcasts__help">2 выпуск</span>
+											<a href="podcast.html" class="podcasts__name">Мойдодыр и нейросеть</a>
+											<span class="podcasts__description">В этом выпуске мы обсудили реакцию мозга на стрессовые ситуации; как управлять своим состоянием.</span>
+											<div class="podcasts__inner">
+												<span class="podcasts__text">Название подкаста</span>
+												<span class="podcasts__text">Александр Македонский</span>
+											</div>
+										</div>
+										<div class="podcasts__additional">
+											<a href="#" class="podcasts__play c-play">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-play"></use>
+												</svg>
+												<span>1 ч 20 мин</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="podcasts__item">
+									<a href="podcast.html" class="podcasts__img">
+										<img src="img/podcasts-01.jpg" alt="Image">
+									</a>
+									<div class="podcasts__main">
+										<div class="podcasts__body">
+											<span class="podcasts__help">2 выпуск</span>
+											<a href="podcast.html" class="podcasts__name">Мойдодыр и нейросеть</a>
+											<span class="podcasts__description">В этом выпуске мы обсудили реакцию мозга на стрессовые ситуации; как управлять своим состоянием.</span>
+											<div class="podcasts__inner">
+												<span class="podcasts__text">Название подкаста</span>
+												<span class="podcasts__text">Александр Македонский</span>
+											</div>
+										</div>
+										<div class="podcasts__additional">
+											<a href="#" class="podcasts__play c-play">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-play"></use>
+												</svg>
+												<span>1 ч 20 мин</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="layout__right"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of layout -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
