@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SCROLL</title>
-	<meta property="og:title" content="SCROLL">
+	<title>SCROLL - Тренды</title>
+	<meta property="og:title" content="SCROLL - Тренды">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="SCROLL">
+	<meta property="og:site_name" content="SCROLL - Тренды">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -25,20 +25,10 @@
 						<img src="img/logotype.svg" alt="SCROLL">
 					</a>
 				</div>
-				<div class="header__center">
-					<div class="c-search header__search">
-						<div class="c-search__inner">
-							<input type="text" class="c-search__input" placeholder="Поиск">
-						</div>
-					</div>
-					<button class="ai-btn header__ai">
-						<span>Спросить у ИИ</span>
-						<img src="img/ai-img.png" alt="AI">
-					</button>
-				</div>
+				<div class="header__center"></div>
 				<div class="header__right">
 					<div class="header__controls header__controls--first">
-						<a href="#" class="header__btn header__btn--mobile header__btn--desktop-hidden">
+						<a href="#" class="header__btn header__btn--mobile">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
@@ -309,45 +299,95 @@
 	<div class="layout">
 		<div class="container">
 			<div class="layout__wrap">
-				<div class="layout__left"></div>
+				<div class="layout__left layout__left--visible">
+					<div class="layout__sections layout__sticky">
+						<a href="index.html" class="back-btn layout__back">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+						</a>
+						<div class="nav-sections layout__nav-sections">
+							<ul class="nav-sections__list">
+								<li class="nav-sections__item">
+									<a href="videos.html" class="nav-sections__link">Видео</a>
+								</li>
+								<li class="nav-sections__item is--active">
+									<a href="tranding-videos.html" class="nav-sections__link">Тренды</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="lectures.html" class="nav-sections__link">Лекции</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="podcasts.html" class="nav-sections__link">Аудиоподкасты</a>
+								</li>
+								<li class="nav-sections__item">
+									<a href="#" class="nav-sections__link">Клуб юристов</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- footer -->
+					<footer class="footer layout__footer" id="footer">
+						<div class="footer-socmedia footer__socmedia">
+							<div class="footer-socmedia__wrapper">
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vcru"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-dzen"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-nav footer__nav">
+							<div class="footer-nav__wrapper">
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Заказать рекламу</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">О проекте</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Конфиденциальность</a>
+									</li>
+								</ul>
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Правила</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Помощь</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Вакансии</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+					<!-- end of footer -->
+				</div>
 				<div class="layout__main">
 					<div class="layout__main-wrapper">
-						<div class="layout__center">
-							<!-- error section -->
-							<div class="error">
-								<div class="error__wrapper">
-									<picture class="error__img">
-										<img src="img/404.svg" alt="404">
-									</picture>
-									<div class="error__body">
-										<h1 class="error__heading">Страница не найдена</h1>
-										<p class="error__description mt16">Зато у нас есть много других <br>интересных страниц</p>
-									</div>
-								</div>
-								<div class="page-list error__block">
-									<div class="page-list__wrapper">
-										<a href="#" class="page-list__item">
-											<img src="img/page-list-01.png" alt="Icon">
-											<span>Дагестан с начала 2023г. в 5 раз увеличил гарантийную поддержку бизнеса</span>
-										</a>
-										<a href="#" class="page-list__item">
-											<img src="img/page-list-02.png" alt="Icon">
-											<span>Мнение: льготная ипотека на «вторичку» уравновесит цены на жилье в ЮФО</span>
-										</a>
-										<a href="#" class="page-list__item">
-											<img src="img/page-list-03.png" alt="Icon">
-											<span>Шесть регионов СКФО стали аутсайдерами рейтинга благосостояния населения</span>
-										</a>
-										<a href="#" class="page-list__item">
-											<img src="img/page-list-04.png" alt="Icon">
-											<span>Компании Маска Neuralink разрешили испытывать чипы на мозгах людей. </span>
-										</a>
-									</div>
-								</div>
+						<div class="layout__center layout__center--wide">
+							<div class="trands mobile-wide">
+								<div class="trands__wrapper"></div>
 							</div>
-							<!-- end of error section -->
 						</div>
-						<div class="layout__right"></div>
 					</div>
 				</div>
 			</div>

@@ -43,7 +43,7 @@
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn">
+						<a href="#" class="header__btn header__btn--tablet-hidden">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
@@ -311,26 +311,28 @@
 			<div class="layout__wrap">
 				<div class="layout__left"></div>
 				<div class="layout__main">
-					<div class="layout__center">
-						<!-- error section -->
-						<div class="error">
-							<div class="error__wrapper">
-								<picture class="error__img">
-									<img src="img/500.svg" alt="500">
-								</picture>
-								<div class="error__body">
-									<h1 class="error__heading">Что-то пошло не так</h1>
-									<p class="error__description mt16">Мы уже работаем над ошибкой</p>
-								</div>
-								<div class="error__info">
-									<p class="error__description">Попробуйте перезагрузить страницу или зайти через несколько минут</p>
-									<a href="index.html" class="error__btn btn btn--blue">Перезагрузить</a>
+					<div class="layout__main-wrapper">
+						<div class="layout__center">
+							<!-- error section -->
+							<div class="error">
+								<div class="error__wrapper">
+									<picture class="error__img">
+										<img src="img/500.svg" alt="500">
+									</picture>
+									<div class="error__body">
+										<h1 class="error__heading">Что-то пошло не так</h1>
+										<p class="error__description mt16">Мы уже работаем над ошибкой</p>
+									</div>
+									<div class="error__info">
+										<p class="error__description">Попробуйте перезагрузить страницу или зайти через несколько минут</p>
+										<a href="index.html" class="error__btn btn btn--blue">Перезагрузить</a>
+									</div>
 								</div>
 							</div>
+							<!-- end of error section -->
 						</div>
-						<!-- end of error section -->
+						<div class="layout__right"></div>
 					</div>
-					<div class="layout__right"></div>
 				</div>
 			</div>
 		</div>

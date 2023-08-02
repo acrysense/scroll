@@ -38,7 +38,7 @@
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn">
+						<a href="#" class="header__btn header__btn--tablet-hidden">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
@@ -361,122 +361,124 @@
 					<!-- end of footer -->
 				</div>
 				<div class="layout__main">
-					<div class="layout__center">
-						<div class="vacancies">
-							<div class="vacancies__wrapper">
-								<div class="vacancies__item is--open">
-									<div class="vacancies__top">
-										<div class="vacancies__top-inner">
-											<div class="vacancies__inner">
-												<h3 class="vacancies__heading">Юрист в команду по созданию новостей на портал</h3>
-												<span class="vacancies__help">20 мин</span>
+					<div class="layout__main-wrapper">
+						<div class="layout__center">
+							<div class="vacancies">
+								<div class="vacancies__wrapper">
+									<div class="vacancies__item is--open">
+										<div class="vacancies__top">
+											<div class="vacancies__top-inner">
+												<div class="vacancies__inner">
+													<h3 class="vacancies__heading">Юрист в команду по созданию новостей на портал</h3>
+													<span class="vacancies__help">20 мин</span>
+												</div>
+												<button class="vacancies__trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
 											</div>
-											<button class="vacancies__trigger">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-plus"></use>
-												</svg>
-											</button>
+											<div class="vacancies__top-inner">
+												<div class="vacancies__inner">
+													<span class="vacancies__help">Senior</span>
+													<span class="vacancies__help">Полная занятость, удаленная работа</span>
+													<span class="vacancies__help vacancies__help--dark">от 100 000 ₽</span>
+												</div>
+											</div>
 										</div>
-										<div class="vacancies__top-inner">
-											<div class="vacancies__inner">
-												<span class="vacancies__help">Senior</span>
-												<span class="vacancies__help">Полная занятость, удаленная работа</span>
-												<span class="vacancies__help vacancies__help--dark">от 100 000 ₽</span>
+										<div class="vacancies__dropdown" style="display: block;">
+											<div class="content vacancies__content">
+												<p><b>Обязанности:</b></p>
+												<ul>
+													<li>Разработка проектов договоров, приложений к ним и доп соглашений, соглашений контрактов, протоколов разногласий и др.</li>
+													<li>Юридическая экспертиза договоров контрагентов, проверка на соответствие законодательству и выявление рисков</li>
+													<li>Ведение переговоров по вопросам урегулирования условий договоров</li>
+													<li>Учет, хранение договоров</li>
+													<li>Проверка контрагентов по специализированной программе, составление досье контрагента (сбор документов)</li>
+												</ul>
+												<p><b>Требования:</b></p>
+												<ul>
+													<li>Высшее юридическое образование</li>
+													<li>Знание гражданского законодательства</li>
+													<li>Опыт работы 1-3 лет</li>
+												</ul>
+												<p><b>Условия:</b></p>
+												<ul>
+													<li>Полный рабочий день, 5/2 с 8:30 до 17:30</li>
+													<li>Современный офис</li>
+													<li>Официальное трудоустройство</li>
+													<li>Окончательный размер з/п согласуется по результатам собеседования</li>
+												</ul>
 											</div>
+											<a href="#" class="vacancies__btn btn btn--dark">
+												<span>Заполнить анкету</span>
+												<span class="bg">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-btn-next"></use>
+													</svg>
+												</span>
+											</a>
 										</div>
 									</div>
-									<div class="vacancies__dropdown" style="display: block;">
-										<div class="content vacancies__content">
-											<p><b>Обязанности:</b></p>
-											<ul>
-												<li>Разработка проектов договоров, приложений к ним и доп соглашений, соглашений контрактов, протоколов разногласий и др.</li>
-												<li>Юридическая экспертиза договоров контрагентов, проверка на соответствие законодательству и выявление рисков</li>
-												<li>Ведение переговоров по вопросам урегулирования условий договоров</li>
-												<li>Учет, хранение договоров</li>
-												<li>Проверка контрагентов по специализированной программе, составление досье контрагента (сбор документов)</li>
-											</ul>
-											<p><b>Требования:</b></p>
-											<ul>
-												<li>Высшее юридическое образование</li>
-												<li>Знание гражданского законодательства</li>
-												<li>Опыт работы 1-3 лет</li>
-											</ul>
-											<p><b>Условия:</b></p>
-											<ul>
-												<li>Полный рабочий день, 5/2 с 8:30 до 17:30</li>
-												<li>Современный офис</li>
-												<li>Официальное трудоустройство</li>
-												<li>Окончательный размер з/п согласуется по результатам собеседования</li>
-											</ul>
-										</div>
-										<a href="#" class="vacancies__btn btn btn--dark">
-											<span>Заполнить анкету</span>
-											<span class="bg">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-arrow-btn-next"></use>
-												</svg>
-											</span>
-										</a>
-									</div>
-								</div>
-								<div class="vacancies__item">
-									<div class="vacancies__top">
-										<div class="vacancies__top-inner">
-											<div class="vacancies__inner">
-												<h3 class="vacancies__heading">Юрист в команду по созданию новостей на портал</h3>
+									<div class="vacancies__item">
+										<div class="vacancies__top">
+											<div class="vacancies__top-inner">
+												<div class="vacancies__inner">
+													<h3 class="vacancies__heading">Юрист в команду по созданию новостей на портал</h3>
+												</div>
+												<button class="vacancies__trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+												</button>
 											</div>
-											<button class="vacancies__trigger">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-plus"></use>
-												</svg>
-											</button>
-										</div>
-										<div class="vacancies__top-inner">
-											<div class="vacancies__inner">
-												<span class="vacancies__help">Senior</span>
-												<span class="vacancies__help">Полная занятость, удаленная работа</span>
-												<span class="vacancies__help vacancies__help--dark">от 100 000 ₽</span>
+											<div class="vacancies__top-inner">
+												<div class="vacancies__inner">
+													<span class="vacancies__help">Senior</span>
+													<span class="vacancies__help">Полная занятость, удаленная работа</span>
+													<span class="vacancies__help vacancies__help--dark">от 100 000 ₽</span>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="vacancies__dropdown">
-										<div class="content vacancies__content">
-											<p><b>Обязанности:</b></p>
-											<ul>
-												<li>Разработка проектов договоров, приложений к ним и доп соглашений, соглашений контрактов, протоколов разногласий и др.</li>
-												<li>Юридическая экспертиза договоров контрагентов, проверка на соответствие законодательству и выявление рисков</li>
-												<li>Ведение переговоров по вопросам урегулирования условий договоров</li>
-												<li>Учет, хранение договоров</li>
-												<li>Проверка контрагентов по специализированной программе, составление досье контрагента (сбор документов)</li>
-											</ul>
-											<p><b>Требования:</b></p>
-											<ul>
-												<li>Высшее юридическое образование</li>
-												<li>Знание гражданского законодательства</li>
-												<li>Опыт работы 1-3 лет</li>
-											</ul>
-											<p><b>Условия:</b></p>
-											<ul>
-												<li>Полный рабочий день, 5/2 с 8:30 до 17:30</li>
-												<li>Современный офис</li>
-												<li>Официальное трудоустройство</li>
-												<li>Окончательный размер з/п согласуется по результатам собеседования</li>
-											</ul>
+										<div class="vacancies__dropdown">
+											<div class="content vacancies__content">
+												<p><b>Обязанности:</b></p>
+												<ul>
+													<li>Разработка проектов договоров, приложений к ним и доп соглашений, соглашений контрактов, протоколов разногласий и др.</li>
+													<li>Юридическая экспертиза договоров контрагентов, проверка на соответствие законодательству и выявление рисков</li>
+													<li>Ведение переговоров по вопросам урегулирования условий договоров</li>
+													<li>Учет, хранение договоров</li>
+													<li>Проверка контрагентов по специализированной программе, составление досье контрагента (сбор документов)</li>
+												</ul>
+												<p><b>Требования:</b></p>
+												<ul>
+													<li>Высшее юридическое образование</li>
+													<li>Знание гражданского законодательства</li>
+													<li>Опыт работы 1-3 лет</li>
+												</ul>
+												<p><b>Условия:</b></p>
+												<ul>
+													<li>Полный рабочий день, 5/2 с 8:30 до 17:30</li>
+													<li>Современный офис</li>
+													<li>Официальное трудоустройство</li>
+													<li>Окончательный размер з/п согласуется по результатам собеседования</li>
+												</ul>
+											</div>
+											<a href="#" class="vacancies__btn btn btn--dark">
+												<span>Заполнить анкету</span>
+												<span class="bg">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-btn-next"></use>
+													</svg>
+												</span>
+											</a>
 										</div>
-										<a href="#" class="vacancies__btn btn btn--dark">
-											<span>Заполнить анкету</span>
-											<span class="bg">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-arrow-btn-next"></use>
-												</svg>
-											</span>
-										</a>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="layout__right"></div>
 					</div>
-					<div class="layout__right"></div>
 				</div>
 			</div>
 		</div>

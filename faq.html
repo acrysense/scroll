@@ -38,7 +38,7 @@
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn">
+						<a href="#" class="header__btn header__btn--tablet-hidden">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
@@ -361,355 +361,357 @@
 					<!-- end of footer -->
 				</div>
 				<div class="layout__main">
-					<div class="layout__center">
-						<div class="page-search">
-							<form action="#" class="page-search__inner">
-								<input type="text" class="page-search__input" placeholder="Поиск">
-								<button class="page-search__btn">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
-								</button>
-							</form>
-						</div>
-						<div class="faq">
-							<div class="faq__wrap">
-								<div class="faq__wrapper">
-									<div class="faq__item">
-										<h3 class="faq__title">Профиль</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item is--open">
-													<button class="faq-list__trigger">
-														<span>Как зарегистрироваться?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+					<div class="layout__main-wrapper">
+						<div class="layout__center">
+							<div class="page-search">
+								<form action="#" class="page-search__inner">
+									<input type="text" class="page-search__input" placeholder="Поиск">
+									<button class="page-search__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+								</form>
+							</div>
+							<div class="faq">
+								<div class="faq__wrap">
+									<div class="faq__wrapper">
+										<div class="faq__item">
+											<h3 class="faq__title">Профиль</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item is--open">
+														<button class="faq-list__trigger">
+															<span>Как зарегистрироваться?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Можно ли связать несколько аккаунтов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как восстановить доступ к аккаунту?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как привязать почту?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
 													</div>
 												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Можно ли связать несколько аккаунтов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+											</div>
+										</div>
+										<div class="faq__item">
+											<h3 class="faq__title">Редактор и создание публикаций</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как отредактировать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>В какой раздел лучше опубликовать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Какие есть ограничения на загрузку медиафайлов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
 													</div>
 												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как восстановить доступ к аккаунту?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+											</div>
+										</div>
+										<div class="faq__item">
+											<h3 class="faq__title">Конструктор шаблонов</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как отредактировать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>В какой раздел лучше опубликовать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Какие есть ограничения на загрузку медиафайлов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
 													</div>
 												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как привязать почту?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+											</div>
+										</div>
+										<div class="faq__item">
+											<h3 class="faq__title">Юридические консультации</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как отредактировать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>В какой раздел лучше опубликовать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Какие есть ограничения на загрузку медиафайлов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
 													</div>
 												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+											</div>
+										</div>
+										<div class="faq__item">
+											<h3 class="faq__title">Подписка PRO</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как отредактировать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>В какой раздел лучше опубликовать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Какие есть ограничения на загрузку медиафайлов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="faq__item">
+											<h3 class="faq__title">Контент</h3>
+											<div class="faq-list faq__list">
+												<div class="faq-list__wrapper">
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как отредактировать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>В какой раздел лучше опубликовать статью?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Какие есть ограничения на загрузку медиафайлов?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
+													</div>
+													<div class="faq-list__item">
+														<button class="faq-list__trigger">
+															<span>Как удалить аккаунт?</span>
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-plus"></use>
+															</svg>
+														</button>
+														<div class="faq-list__dropdown">
+															<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="faq__item">
-										<h3 class="faq__title">Редактор и создание публикаций</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как отредактировать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>В какой раздел лучше опубликовать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Какие есть ограничения на загрузку медиафайлов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
+									<div class="feedback-widget faq__widget">
+										<article class="feedback-widget__item">
+											<div class="feedback-widget__body">
+												<h3 class="feedback-widget__title">Помогите нам стать лучше</h3>
+												<p class="feedback-widget__description">Пока мы изучаем для вас новые тренды, поделитесь впечатленими о прочитанном</p>
 											</div>
-										</div>
+											<a href="#" class="feedback-widget__btn">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+												</svg>
+											</a>
+										</article>
 									</div>
-									<div class="faq__item">
-										<h3 class="faq__title">Конструктор шаблонов</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как отредактировать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>В какой раздел лучше опубликовать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Какие есть ограничения на загрузку медиафайлов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="faq__item">
-										<h3 class="faq__title">Юридические консультации</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как отредактировать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>В какой раздел лучше опубликовать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Какие есть ограничения на загрузку медиафайлов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="faq__item">
-										<h3 class="faq__title">Подписка PRO</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как отредактировать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>В какой раздел лучше опубликовать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Какие есть ограничения на загрузку медиафайлов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="faq__item">
-										<h3 class="faq__title">Контент</h3>
-										<div class="faq-list faq__list">
-											<div class="faq-list__wrapper">
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как отредактировать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>В какой раздел лучше опубликовать статью?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Какие есть ограничения на загрузку медиафайлов?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-												<div class="faq-list__item">
-													<button class="faq-list__trigger">
-														<span>Как удалить аккаунт?</span>
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-plus"></use>
-														</svg>
-													</button>
-													<div class="faq-list__dropdown">
-														<p class="faq-list__description">Вы можете зарегистрироваться по почте, с помощью Google-профиля или Apple ID.</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="feedback-widget faq__widget">
-									<article class="feedback-widget__item">
-										<div class="feedback-widget__body">
-											<h3 class="feedback-widget__title">Помогите нам стать лучше</h3>
-											<p class="feedback-widget__description">Пока мы изучаем для вас новые тренды, поделитесь впечатленими о прочитанном</p>
-										</div>
-										<a href="#" class="feedback-widget__btn">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-											</svg>
-										</a>
-									</article>
 								</div>
 							</div>
 						</div>
+						<div class="layout__right"></div>
 					</div>
-					<div class="layout__right"></div>
 				</div>
 			</div>
 		</div>
