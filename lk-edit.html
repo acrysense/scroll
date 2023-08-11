@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SCROLL - Лекции</title>
-	<meta property="og:title" content="SCROLL - Лекции">
+	<title>SCROLL</title>
+	<meta property="og:title" content="SCROLL">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="SCROLL - Лекции">
+	<meta property="og:site_name" content="SCROLL">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -19,16 +19,21 @@
 	<!-- header -->
 	<header class="header" id="header">
 		<div class="container">
-			<div class="header__wrapper">
+			<div class="header__wrapper header__wrapper--inner">
 				<div class="header__left">
-					<a href="index.html" class="header__logotype">
-						<img src="img/logotype.svg" alt="SCROLL">
+					<a href="index.html" class="header__logotype header__logotype--small">
+						<picture>
+							<source srcset="img/logotype.svg" media="(min-width: 768px)">
+							<img src="img/logotype-small.svg" alt="SCROLL">
+						</picture>
 					</a>
 				</div>
-				<div class="header__center"></div>
+				<div class="header__center">
+					<h3 class="header__heading">Личный кабинет</h3>
+				</div>
 				<div class="header__right">
 					<div class="header__controls header__controls--first">
-						<a href="#" class="header__btn header__btn--mobile">
+						<a href="#" class="header__btn header__btn--search">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
@@ -45,8 +50,8 @@
 						</a>
 					</div>
 					<div class="header__controls header__controls--second">
-						<a href="#" class="header__btn">
-							<span>Войти</span>
+						<a href="#" class="c-ava header__user">
+							<span>А</span>
 						</a>
 						<hamburger class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
@@ -299,35 +304,9 @@
 	<div class="layout">
 		<div class="container">
 			<div class="layout__wrap">
-				<div class="layout__left layout__left--visible">
-					<div class="layout__sections layout__sticky">
-						<a href="index.html" class="back-btn layout__back">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-back"></use>
-							</svg>
-						</a>
-						<div class="nav-sections layout__nav-sections">
-							<ul class="nav-sections__list">
-								<li class="nav-sections__item">
-									<a href="videos.html" class="nav-sections__link">Видео</a>
-								</li>
-								<li class="nav-sections__item">
-									<a href="tranding-videos.html" class="nav-sections__link">Тренды</a>
-								</li>
-								<li class="nav-sections__item is--active">
-									<a href="lectures.html" class="nav-sections__link">Лекции</a>
-								</li>
-								<li class="nav-sections__item">
-									<a href="podcasts.html" class="nav-sections__link">Аудиоподкасты</a>
-								</li>
-								<li class="nav-sections__item">
-									<a href="lawyers-club.html" class="nav-sections__link">Клуб юристов</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+				<div class="layout__left">
 					<!-- footer -->
-					<footer class="footer layout__footer" id="footer">
+					<footer class="footer layout__footer layout__sticky layout__sticky--bottom" id="footer">
 						<div class="footer-socmedia footer__socmedia">
 							<div class="footer-socmedia__wrapper">
 								<a href="#" class="footer-socmedia__btn">
@@ -383,155 +362,92 @@
 				</div>
 				<div class="layout__main">
 					<div class="layout__main-wrapper">
-						<div class="layout__center layout__center--wide">
-							<div class="lectures mobile-wide">
-								<div class="lectures__wrapper">
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-01.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
+						<div class="layout__center">
+							<div class="lk">
+								<div class="lk__wrap">
+									<div class="lk__wrapper">
+										<div class="lk__top">
+											<div class="lk__controls">
+												<a href="#" class="back-btn lk__back">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-back"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="lk__controls">
+												<a href="#" class="lk__exit">Выйти из аккаунта</a>
 											</div>
 										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-02.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
+										<div class="lk__main">
+											<div class="lk-edit lk__edit">
+												<form action="#" class="lk-edit__wrapper">
+													<div class="lk-edit__top">
+														<div class="lk-edit__photo">
+															<input type="file" id="upload-photo" class="lk-edit__photo-input">
+															<label for="upload-photo" class="lk-edit__photo-label">
+																<picture class="lk-edit__img">
+																	<img src="img/user.jpg" alt="Image">
+																</picture>
+																<div class="lk-edit__icon-wrap">
+																	<svg class="lk-edit__icon">
+																		<use xlink:href="img/sprite.svg#icon-camera"></use>
+																	</svg>
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="lk-edit__main">
+														<div class="lk-edit__inputs">
+															<div class="input-field lk-edit__input is--error">
+																<div class="input-field__top">
+																	<label for="lk-edit-name" class="input-field__label">Имя</label>
+																</div>
+																<div class="input-field__inner">
+																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="Имя" value="Александр">
+																</div>
+																<span class="input-field__error">Это обязательное поле</span>
+															</div>
+															<div class="input-field lk-edit__input">
+																<div class="input-field__top">
+																	<label for="lk-edit-name" class="input-field__label">Email</label>
+																</div>
+																<div class="input-field__inner">
+																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="example@gmail.com" value="aleks@gmail.com">
+																</div>
+																<span class="input-field__error">Это обязательное поле</span>
+															</div>
+															<div class="input-field lk-edit__input">
+																<div class="input-field__top">
+																	<label for="lk-edit-name" class="input-field__label">Номер телефона</label>
+																</div>
+																<div class="input-field__inner">
+																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="+7 000 000 00 00">
+																</div>
+																<span class="input-field__error">Это обязательное поле</span>
+															</div>
+															<div class="input-field lk-edit__input">
+																<div class="input-field__top">
+																	<label for="lk-edit-name" class="input-field__label">Город</label>
+																</div>
+																<div class="input-field__inner">
+																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="Москва">
+																</div>
+																<span class="input-field__error">Это обязательное поле</span>
+															</div>
+														</div>
+													</div>
+													<div class="lk-edit__bottom">
+														<button class="lk-edit__btn btn btn--md-bold btn--orange">Сохранить</button>
+													</div>
+												</form>
 											</div>
 										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-03.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-04.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-05.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-06.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-07.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-08.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-09.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-10.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-11.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
-									<a href="lecture.html" class="category-card category-card--sm lectures__item">
-										<picture class="category-card__img">
-											<img src="img/lectures-12.jpg" alt="Image">
-										</picture>
-										<div class="category-card__body">
-											<span class="category-card__name">Люди не готовы к ошибкам нейросетей</span>
-											<div class="category-card__inner">
-												<span class="category-card__author">Александр Македонский</span>
-												<span class="category-card__help">1 день назад</span>
-											</div>
-										</div>
-									</a>
+									</div>
 								</div>
 							</div>
+						</div>
+						<div class="layout__right">
+							<span class="layout__info layout__sticky layout__sticky--bottom">На проекте с 12 янв 2023</span>
 						</div>
 					</div>
 				</div>
