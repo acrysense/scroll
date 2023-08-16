@@ -301,7 +301,7 @@
 	</div>
 	<!-- end of menu -->
 	<!-- layout -->
-	<div class="layout">
+	<div class="layout layout--lk">
 		<div class="container">
 			<div class="layout__wrap">
 				<div class="layout__left">
@@ -368,14 +368,14 @@
 									<div class="lk__wrapper">
 										<div class="lk__top">
 											<div class="lk__controls">
-												<a href="#" class="back-btn lk__back">
+												<a href="index.html" class="back-btn lk__back">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-back"></use>
 													</svg>
 												</a>
 											</div>
 											<div class="lk__controls">
-												<a href="#" class="lk__settings">
+												<a href="lk-edit.html" class="lk__settings">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-settings"></use>
 													</svg>
@@ -398,7 +398,7 @@
 									</div>
 									<div class="lk-tabs lk__tabs">
 										<ul class="lk-tabs__list">
-											<li class="lk-tabs__item">
+											<li class="lk-tabs__item is--active">
 												<button class="lk-tabs__tab">Публикации</button>
 											</li>
 											<li class="lk-tabs__item">
@@ -407,17 +407,784 @@
 											<li class="lk-tabs__item">
 												<button class="lk-tabs__tab">Конструктор документов</button>
 											</li>
-											<li class="lk-tabs__item is--active">
+											<li class="lk-tabs__item">
 												<button class="lk-tabs__tab">Подписка PRO</button>
 											</li>
 											<li class="lk-tabs__item">
 												<button class="lk-tabs__tab">Заказать рекламу</button>
 											</li>
 										</ul>
-										<div class="lk-tabs__wrapper"></div>
-										<div class="lk-tabs__wrapper"></div>
-										<div class="lk-tabs__wrapper"></div>
+										<div class="lk-tabs__wrapper is--activ">
+											<div class="lk__body">
+												<div class="lk__block">
+													<div class="lk__fixed">
+														<a href="#" class="lk__fixed-btn btn-circle btn-circle--sm">Предложить новость</a>
+														<div class="lk__fixed-bg">
+															<img src="img/lines-vertical.svg" alt="Background">
+														</div>
+													</div>
+												</div>
+												<div class="lk__block">
+													<div class="lk-publications">
+														<ul class="lk-publications__tabs">
+															<li class="lk-publications__tabs-item is--active">
+																<button class="lk-publications__tabs-button">Опубликованное</button>
+															</li>
+															<li class="lk-publications__tabs-item">
+																<button class="lk-publications__tabs-button">Черновики</button>
+															</li>
+														</ul>
+														<div class="lk-publications__wrapper is--active">
+															<div class="lk-publications__list">
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__controls">
+																				<button class="lk-publications-card__control">
+																					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																						<path d="M3.33268 6.00033V14.0003H0.666016V6.00033H3.33268ZM5.99935 14.0003C5.64573 14.0003 5.30659 13.8598 5.05654 13.6098C4.80649 13.3598 4.66602 13.0206 4.66602 12.667V6.00033C4.66602 5.63366 4.81268 5.30033 5.05935 5.06033L9.44602 0.666992L10.1527 1.37366C10.3327 1.55366 10.446 1.80033 10.446 2.07366L10.426 2.28699L9.79268 5.33366H13.9993C14.7393 5.33366 15.3327 5.93366 15.3327 6.66699V8.00033C15.3327 8.17366 15.2993 8.33366 15.2393 8.48699L13.226 13.187C13.026 13.667 12.5527 14.0003 11.9993 14.0003H5.99935ZM5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																						<path d="M5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																					</svg>
+																					<span>455</span>
+																				</button>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-comment"></use>
+																					</svg>
+																					<span>34</span>
+																				</a>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-eye"></use>
+																					</svg>
+																					<span>1234</span>
+																				</a>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__controls">
+																				<button class="lk-publications-card__control">
+																					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																						<path d="M3.33268 6.00033V14.0003H0.666016V6.00033H3.33268ZM5.99935 14.0003C5.64573 14.0003 5.30659 13.8598 5.05654 13.6098C4.80649 13.3598 4.66602 13.0206 4.66602 12.667V6.00033C4.66602 5.63366 4.81268 5.30033 5.05935 5.06033L9.44602 0.666992L10.1527 1.37366C10.3327 1.55366 10.446 1.80033 10.446 2.07366L10.426 2.28699L9.79268 5.33366H13.9993C14.7393 5.33366 15.3327 5.93366 15.3327 6.66699V8.00033C15.3327 8.17366 15.2993 8.33366 15.2393 8.48699L13.226 13.187C13.026 13.667 12.5527 14.0003 11.9993 14.0003H5.99935ZM5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																						<path d="M5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																					</svg>
+																					<span>455</span>
+																				</button>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-comment"></use>
+																					</svg>
+																					<span>34</span>
+																				</a>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-eye"></use>
+																					</svg>
+																					<span>1234</span>
+																				</a>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__controls">
+																				<button class="lk-publications-card__control">
+																					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																						<path d="M3.33268 6.00033V14.0003H0.666016V6.00033H3.33268ZM5.99935 14.0003C5.64573 14.0003 5.30659 13.8598 5.05654 13.6098C4.80649 13.3598 4.66602 13.0206 4.66602 12.667V6.00033C4.66602 5.63366 4.81268 5.30033 5.05935 5.06033L9.44602 0.666992L10.1527 1.37366C10.3327 1.55366 10.446 1.80033 10.446 2.07366L10.426 2.28699L9.79268 5.33366H13.9993C14.7393 5.33366 15.3327 5.93366 15.3327 6.66699V8.00033C15.3327 8.17366 15.2993 8.33366 15.2393 8.48699L13.226 13.187C13.026 13.667 12.5527 14.0003 11.9993 14.0003H5.99935ZM5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																						<path d="M5.99935 12.667H12.0193L13.9993 8.00033V6.66699H8.13935L8.89268 3.12033L5.99935 6.02033V12.667Z" fill="#FE687A" />
+																					</svg>
+																					<span>455</span>
+																				</button>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-comment"></use>
+																					</svg>
+																					<span>34</span>
+																				</a>
+																				<a href="#" class="lk-publications-card__control">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-eye"></use>
+																					</svg>
+																					<span>1234</span>
+																				</a>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="lk-publications__empty">
+																<p class="lk-publications__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
+															</div>
+														</div>
+														<div class="lk-publications__wrapper">
+															<div class="lk-publications__list">
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__inner">
+																				<span class="lk-publications-card__status lk-publications-card__status--purple">Черновик</span>
+																				<div class="c-more lk-publications-card__more">
+																					<button class="c-more__trigger">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-more-horizontal"></use>
+																						</svg>
+																					</button>
+																					<div class="c-more__dropdown">
+																						<ul class="c-more__list">
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Редактировать</button>
+																							</li>
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Удалить</button>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__inner">
+																				<span class="lk-publications-card__status">Ожидает модерации</span>
+																				<div class="c-more lk-publications-card__more">
+																					<button class="c-more__trigger">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-more-horizontal"></use>
+																						</svg>
+																					</button>
+																					<div class="c-more__dropdown">
+																						<ul class="c-more__list">
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Редактировать</button>
+																							</li>
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Удалить</button>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="lk-publications-card lk-publications__item">
+																	<div class="lk-publications-card__wrapper">
+																		<div class="lk-publications-card__top">
+																			<a href="#" class="lk-publications-card__title">Как получить материнский капитал</a>
+																			<span class="lk-publications-card__date">12 марта</span>
+																		</div>
+																		<div class="lk-publications-card__bottom">
+																			<div class="lk-publications-card__inner">
+																				<span class="lk-publications-card__status lk-publications-card__status--red">Ожидает модерации</span>
+																				<div class="c-more lk-publications-card__more">
+																					<button class="c-more__trigger">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-more-horizontal"></use>
+																						</svg>
+																					</button>
+																					<div class="c-more__dropdown">
+																						<ul class="c-more__list">
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Редактировать</button>
+																							</li>
+																							<li class="c-more__item">
+																								<button class="c-more__btn">Удалить</button>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
+																			<a href="#" class="lk-publications-card__arrow">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-arrow-link-down"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="lk-publications__empty">
+																<p class="lk-publications__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk-tabs__wrapper">
+											<div class="lk-bookmarks lk__main">
+												<div class="lk-bookmarks__wrap">
+													<ul class="lk-bookmarks__tabs">
+														<li class="lk-bookmarks__tabs-item is--active">
+															<button class="lk-bookmarks__tabs-button">Статьи</button>
+														</li>
+														<li class="lk-bookmarks__tabs-item">
+															<button class="lk-bookmarks__tabs-button">Видео</button>
+														</li>
+														<li class="lk-bookmarks__tabs-item">
+															<button class="lk-bookmarks__tabs-button">Аудио</button>
+														</li>
+													</ul>
+													<div class="lk-bookmarks__holder">
+														<div class="lk-bookmarks__wrapper is--active">
+															<div class="lk-bookmarks__wrapper-inner">
+																<div class="lk-articles lk-bookmarks__section">
+																	<div class="lk-articles__wrapper">
+																		<div class="lk-articles__column">
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Рыбоводческие предприятия Дона планируют нарастить экспорт в Белоруссию</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Спорт</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																		</div>
+																		<div class="lk-articles__column">
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Эксперты подсчитали переплаты невысыпающимся россиянам</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																			<article class="lk-articles__item">
+																				<a href="#" class="lk-articles__title">Рыбоводческие предприятия Дона планируют нарастить экспорт в Белоруссию</a>
+																				<div class="lk-articles__inner">
+																					<span class="lk-articles__help">Политика</span>
+																					<button class="lk-articles__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</article>
+																		</div>
+																	</div>
+																</div>
+																<button class="lk-bookmarks__favorites c-bookmark is--active">
+																	<svg class="c-bookmark__icon c-bookmark__icon--default">
+																		<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																	</svg>
+																	<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																		<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+														<div class="lk-bookmarks__wrapper">
+															<div class="lk-video lk-bookmarks__section">
+																<div class="lk-video__top">
+																	<ul class="lk-video__tabs">
+																		<li class="lk-video__tabs-item is--active">
+																			<button class="lk-video__tabs-button">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-orientation-vertical"></use>
+																				</svg>
+																			</button>
+																		</li>
+																		<li class="lk-video__tabs-item">
+																			<button class="lk-video__tabs-button">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-orientation-horizontal"></use>
+																				</svg>
+																			</button>
+																		</li>
+																	</ul>
+																	<button class="lk-bookmarks__favorites c-bookmark is--active">
+																		<svg class="c-bookmark__icon c-bookmark__icon--default">
+																			<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																		</svg>
+																		<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																			<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																		</svg>
+																	</button>
+																</div>
+																<div class="lk-video__holder is--active">
+																	<div class="lk-video__wrapper">
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-01.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-02.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-03.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-04.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-05.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-06.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-07.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item lk-video__item--vertical">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/trands-video-08.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																	</div>
+																</div>
+																<div class="lk-video__holder">
+																	<div class="lk-video__wrapper">
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-01.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-02.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-03.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-04.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-02.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-03.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-01.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																		<article class="lk-video__item">
+																			<a href="#" class="lk-video__media">
+																				<img src="img/videos-04.jpg" alt="Image">
+																			</a>
+																			<button class="lk-video__favorites c-bookmark is--active">
+																				<svg class="c-bookmark__icon c-bookmark__icon--default">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																				</svg>
+																				<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																					<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																				</svg>
+																			</button>
+																		</article>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="lk-bookmarks__wrapper">
+															<div class="lk-bookmarks__wrapper-inner">
+																<div class="lk-podcasts lk-bookmarks__section">
+																	<div class="lk-podcasts__wrapper">
+																		<div class="lk-podcasts__item">
+																			<picture class="lk-podcasts__img">
+																				<img src="img/podcasts-01.jpg" alt="Image">
+																			</picture>
+																			<div class="lk-podcasts__body">
+																				<div class="lk-podcasts__main">
+																					<span class="lk-podcasts__help">2 выпуск</span>
+																					<a href="#" class="lk-podcasts__title">Мойдодыр и нейросеть</a>
+																					<span class="lk-podcasts__help">Александр Македонский</span>
+																				</div>
+																				<div class="lk-podcasts__additional">
+																					<button class="lk-podcasts__play">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-play-grey"></use>
+																						</svg>
+																					</button>
+																					<button class="lk-podcasts__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="lk-podcasts__item">
+																			<picture class="lk-podcasts__img">
+																				<img src="img/podcasts-02.jpg" alt="Image">
+																			</picture>
+																			<div class="lk-podcasts__body">
+																				<div class="lk-podcasts__main">
+																					<span class="lk-podcasts__help">2 выпуск</span>
+																					<a href="#" class="lk-podcasts__title">Мойдодыр и нейросеть</a>
+																					<span class="lk-podcasts__help">Александр Македонский</span>
+																				</div>
+																				<div class="lk-podcasts__additional">
+																					<button class="lk-podcasts__play">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-play-grey"></use>
+																						</svg>
+																					</button>
+																					<button class="lk-podcasts__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="lk-podcasts__item">
+																			<picture class="lk-podcasts__img">
+																				<img src="img/podcasts-03.jpg" alt="Image">
+																			</picture>
+																			<div class="lk-podcasts__body">
+																				<div class="lk-podcasts__main">
+																					<span class="lk-podcasts__help">2 выпуск</span>
+																					<a href="#" class="lk-podcasts__title">Мойдодыр и нейросеть</a>
+																					<span class="lk-podcasts__help">Александр Македонский</span>
+																				</div>
+																				<div class="lk-podcasts__additional">
+																					<button class="lk-podcasts__play">
+																						<svg>
+																							<use xlink:href="img/sprite.svg#icon-play-grey"></use>
+																						</svg>
+																					</button>
+																					<button class="lk-podcasts__favorites c-bookmark is--active">
+																						<svg class="c-bookmark__icon c-bookmark__icon--default">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																						</svg>
+																						<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																							<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<button class="lk-bookmarks__favorites c-bookmark is--active">
+																	<svg class="c-bookmark__icon c-bookmark__icon--default">
+																		<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																	</svg>
+																	<svg class="c-bookmark__icon c-bookmark__icon--filled">
+																		<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 										<div class="lk-tabs__wrapper is--active">
+											<div class="lk__body">
+												<div class="lk__block">
+													<div class="lk__fixed">
+														<div class="lk__fixed-bg">
+															<img src="img/bg-square.svg" alt="Background">
+														</div>
+													</div>
+												</div>
+												<div class="lk__block">
+													<div class="lk-document-designer">
+														<ul class="lk-document-designer__tabs">
+															<li class="lk-document-designer__tabs-item is--active">
+																<button class="lk-document-designer__tabs-button">Документы</button>
+															</li>
+															<li class="lk-document-designer__tabs-item">
+																<button class="lk-document-designer__tabs-button">Тариф</button>
+															</li>
+														</ul>
+														<div class="lk-document-designer__wrapper is--active"></div>
+														<div class="lk-document-designer__wrapper"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk-tabs__wrapper">
 											<div class="pro-subscription">
 												<div class="pro-subscription__wrapper">
 													<h3 class="pro-subscription__heading">1 месяц </h3>
@@ -460,7 +1227,46 @@
 												</div>
 											</div>
 										</div>
-										<div class="lk-tabs__wrapper"></div>
+										<div class="lk-tabs__wrapper">
+											<div class="lk-order-ads">
+												<div class="lk-order-ads__wrapper">
+													<div class="lk-order-ads__top">
+														<h3 class="lk-order-ads__heading">Заказать рекламу</h3>
+														<p class="lk-order-ads__description">Покажем все кейсы и подберем формат под любую задачу</p>
+													</div>
+													<form action="#" class="lk-order-ads__form">
+														<div class="input-field lk-order-ads__input">
+															<div class="input-field__top">
+																<label for="lk-edit-name" class="input-field__label">Имя представителя</label>
+															</div>
+															<div class="input-field__inner">
+																<input type="text" id="lk-edit-name" class="input-field__input" placeholder="Имя" value="Александр">
+															</div>
+															<span class="input-field__error">Это обязательное поле</span>
+														</div>
+														<div class="input-field lk-order-ads__input is--error">
+															<div class="input-field__top">
+																<label for="lk-edit-name" class="input-field__label">Номер телефона</label>
+															</div>
+															<div class="input-field__inner">
+																<input type="text" id="lk-edit-name" class="input-field__input" placeholder="+7 000 000 00 00">
+															</div>
+															<span class="input-field__error">Это обязательное поле</span>
+														</div>
+														<div class="input-field lk-order-ads__input">
+															<div class="input-field__top">
+																<label for="lk-edit-name" class="input-field__label">Email</label>
+															</div>
+															<div class="input-field__inner">
+																<input type="text" id="lk-edit-name" class="input-field__input" placeholder="example@gmail.com" value="aleks@gmail.com">
+															</div>
+															<span class="input-field__error">Это обязательное поле</span>
+														</div>
+														<button class="lk-order-ads__btn btn btn--md-bold btn--orange">Оформить заявку</button>
+													</form>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
