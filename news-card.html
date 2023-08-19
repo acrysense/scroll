@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SCROLL - Карточка новости</title>
+	<meta property="og:title" content="SCROLL - Карточка новости">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SCROLL - Карточка новости">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__left">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</a>
+				</div>
+				<div class="header__center">
+					<div class="c-search header__search">
+						<div class="c-search__inner">
+							<input type="text" class="c-search__input" placeholder="Поиск">
+						</div>
+					</div>
+					<button class="ai-btn header__ai">
+						<span>Спросить у ИИ</span>
+						<img src="img/ai-img.png" alt="AI">
+					</button>
+				</div>
+				<div class="header__right">
+					<div class="header__controls header__controls--first">
+						<a href="#" class="header__btn header__btn--mobile header__btn--desktop-hidden">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn header__btn--tablet-hidden">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</a>
+						<a href="#" class="header__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__controls header__controls--second">
+						<a href="#" class="header__btn">
+							<span>Войти</span>
+						</a>
+						<hamburger class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</hamburger>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+	<!-- menu -->
+	<div class="menu">
+		<div class="menu__wrap">
+			<div class="menu__main">
+				<div class="menu__block">
+					<nav class="nav menu__nav">
+						<ul class="nav__list">
+							<li class="nav__item is--active">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-01"></use>
+									</svg>
+									<span>Пособия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-02"></use>
+									</svg>
+									<span>Пенсия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-03"></use>
+									</svg>
+									<span>Льготы</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-04"></use>
+									</svg>
+									<span>Семья</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-05"></use>
+									</svg>
+									<span>Долги</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-06"></use>
+									</svg>
+									<span>Договоры и сделки</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-07"></use>
+									</svg>
+									<span>Суды</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-08"></use>
+									</svg>
+									<span>Транспорт</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-09"></use>
+									</svg>
+									<span>Трудовое законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-10"></use>
+									</svg>
+									<span>Недвижимость</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-11"></use>
+									</svg>
+									<span>Уголовное законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-12"></use>
+									</svg>
+									<span>Наследственные споры</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-13"></use>
+									</svg>
+									<span>Защита прав потребителей</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-14"></use>
+									</svg>
+									<span>Административные правонарушения</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-15"></use>
+									</svg>
+									<span>Регистрация ЮЛ и ИП</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-16"></use>
+									</svg>
+									<span>Банкротство физ лица</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-17"></use>
+									</svg>
+									<span>Помощь иностранным гражданам</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="menu__block">
+					<div class="menu__controls">
+						<button class="ai-btn ai-btn--lg menu__ai">
+							<span>Спросить у ИИ</span>
+							<img src="img/ai-img.png" alt="AI">
+						</button>
+						<button class="menu__btn">
+							<span>Закладки</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile">
+							<span>Уведомления</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-notifications"></use>
+							</svg>
+						</button>
+						<button class="menu__btn menu__btn--mobile menu__close">
+							<span>Закрыть</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="c-account menu__account">
+						<button class="c-account__inner">
+							<span class="c-account__name">Александр Македонский</span>
+							<span class="c-account__help">Аккаунт</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer class="footer menu__footer" id="footer">
+				<div class="footer-socmedia footer__socmedia">
+					<div class="footer-socmedia__wrapper">
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vcru"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+						<a href="#" class="footer-socmedia__btn">
+							<svg class="footer-socmedia__icon">
+								<use xlink:href="img/sprite.svg#icon-dzen"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-nav footer__nav">
+					<div class="footer-nav__wrapper">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Заказать рекламу</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О проекте</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Конфиденциальность</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Помощь</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вакансии</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<!-- end of footer -->
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- layout -->
+	<div class="layout layout--sticky-bottom">
+		<div class="container">
+			<div class="layout__wrap layout__wrap--padding">
+				<div class="layout__left">
+					<nav class="nav layout__nav">
+						<ul class="nav__list is--open">
+							<li class="nav__item is--active">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-01"></use>
+									</svg>
+									<span>Пособия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-02"></use>
+									</svg>
+									<span>Пенсия</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-03"></use>
+									</svg>
+									<span>Льготы</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-04"></use>
+									</svg>
+									<span>Семья</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-05"></use>
+									</svg>
+									<span>Долги</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-06"></use>
+									</svg>
+									<span>Договоры и сделки</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-07"></use>
+									</svg>
+									<span>Суды</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-08"></use>
+									</svg>
+									<span>Транспорт</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-09"></use>
+									</svg>
+									<span>Трудовое законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-10"></use>
+									</svg>
+									<span>Недвижимость</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-11"></use>
+									</svg>
+									<span>Уголовное законодательство</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-12"></use>
+									</svg>
+									<span>Наследственные споры</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-13"></use>
+									</svg>
+									<span>Защита прав потребителей</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-14"></use>
+									</svg>
+									<span>Административные правонарушения</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-15"></use>
+									</svg>
+									<span>Регистрация ЮЛ&nbsp;и&nbsp;ИП</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-16"></use>
+									</svg>
+									<span>Банкротство физического лица</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-nav-17"></use>
+									</svg>
+									<span>Помощь иностранным гражданам</span>
+								</a>
+							</li>
+						</ul>
+						<button class="nav__more is--open" aria-label="Показать больше">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+							</svg>
+						</button>
+					</nav>
+					<!-- footer -->
+					<footer class="footer layout__footer" id="footer">
+						<div class="footer-socmedia footer__socmedia">
+							<div class="footer-socmedia__wrapper">
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vcru"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+								<a href="#" class="footer-socmedia__btn">
+									<svg class="footer-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-dzen"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-nav footer__nav">
+							<div class="footer-nav__wrapper">
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Заказать рекламу</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">О проекте</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Конфиденциальность</a>
+									</li>
+								</ul>
+								<ul class="footer-nav__list">
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Правила</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Помощь</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Вакансии</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+					<!-- end of footer -->
+				</div>
+				<div class="layout__main">
+					<div class="layout__main-wrapper">
+						<div class="layout__center">
+							<div class="big-news mobile-wide">
+								<div class="big-news__wrap">
+									<div class="big-news__content content">
+										<h1>Как получить материнский капитал и на что его можно использовать</h1>
+										<div class="description-block">
+											<div class="description-block__inner">
+												<span>Спорт</span>
+												<span>30 минут назад</span>
+											</div>
+										</div>
+										<div class="media-block">
+											<picture class="media-block__photo">
+												<img src="img/big-news-img.jpg" alt="Image">
+												<a href="#" class="media-block__comments">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-comment"></use>
+													</svg>
+													<span>5 комментариев</span>
+												</a>
+											</picture>
+											<div class="media-controls media-block__controls">
+												<div class="media-controls__wrapper">
+													<div class="media-controls__group">
+														<span class="media-controls__viewed">4 565 просмотров</span>
+													</div>
+													<div class="media-controls__group">
+														<div class="media-controls__btns">
+															<button class="btn-control btn-control--blue media-controls__btn">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																</svg>
+																<span>44</span>
+															</button>
+															<button class="btn-control media-controls__btn">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-reply"></use>
+																</svg>
+																<span>Поделиться</span>
+															</button>
+															<button class="btn-control media-controls__btn">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+																</svg>
+																<span>В закладки</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h5>Для чего нужны изделия Neuralink и как они устроены</h5>
+										<p>
+											«Это результат невероятной работы команды Neuralink в тесном сотрудничестве с FDA, он представляет собой важный первый шаг, который однажды позволит нашей технологии помочь многим людям», — заявили в компании, добавив, что набор добровольцев для клинического испытания еще не открыт.
+											<br><br>
+											Как пишет Reutres, с 2019 года Илон Маск несколько раз анонсировал испытания чипов на людях, однако разрешение FDA Neuralink запросила только в начале 2022 года. Тогда регулятор отклонил заявку. Основные проблемы, по словам сотрудников Neuralink, были связаны с литиевой батареей чипа, возможностью миграции проводов имплантата внутри мозга и проблемой безопасного извлечения устройства без повреждения человеческих тканей.
+											<br><br>
+											В декабре 2022 года Маск анонсировал, что изучение продукции Neuralink на человеке может начаться уже через полгода.
+										</p>
+										<div class="c-quote">
+											<div class="c-quote__wrapper">
+												<p class="c-quote__description">Ничего страшного, никакого пенальти не было. Просто немного накопилась усталость в мышцах, и я почувствовал боль, которую не хотелось усугублять.</p>
+												<span class="c-quote__author">Александр Македонский</span>
+											</div>
+										</div>
+										<p>
+											«Это результат невероятной работы команды Neuralink в тесном сотрудничестве с FDA, он представляет собой важный первый шаг, который однажды позволит нашей технологии помочь многим людям», — заявили в компании, добавив, что набор добровольцев для клинического испытания еще не открыт.
+											<br><br>
+											Как пишет Reutres, с 2019 года Илон Маск несколько раз анонсировал испытания чипов на людях, однако разрешение FDA Neuralink запросила только в начале 2022 года. Тогда регулятор отклонил заявку. Основные проблемы, по словам сотрудников Neuralink, были связаны с литиевой батареей чипа, возможностью миграции проводов имплантата внутри мозга и проблемой безопасного извлечения устройства без повреждения человеческих тканей.
+											<br><br>
+											В декабре 2022 года Маск анонсировал, что изучение продукции Neuralink на человеке может начаться уже через полгода.
+										</p>
+										<div class="big-news__block">
+											<h5>В Берлине сообщили о решении выслать немецких служащих</h5>
+											<div class="description-block">
+												<div class="description-block__inner">
+													<span>Спорт</span>
+													<span>30 минут назад</span>
+													<button class="c-bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+										<p>
+											«Это результат невероятной работы команды Neuralink в тесном сотрудничестве с FDA, он представляет собой важный первый шаг, который однажды позволит нашей технологии помочь многим людям», — заявили в компании, добавив, что набор добровольцев для клинического испытания еще не открыт.
+											<br><br>
+											Как пишет Reutres, с 2019 года Илон Маск несколько раз анонсировал испытания чипов на людях, однако разрешение FDA Neuralink запросила только в начале 2022 года. Тогда регулятор отклонил заявку. Основные проблемы, по словам сотрудников Neuralink, были связаны с литиевой батареей чипа, возможностью миграции проводов имплантата внутри мозга и проблемой безопасного извлечения устройства без повреждения человеческих тканей.
+											<br><br>
+											В декабре 2022 года Маск анонсировал, что изучение продукции Neuralink на человеке может начаться уже через полгода.
+										</p>
+										<picture>
+											<img src="img/big-news-img-02.jpg" alt="Image">
+											<span>Neuralink logo and Elon Musk photo are seen in this illustration taken, December 19, 2022. REUTERS/Dado Ruvic/Illustration/File Photo/File Photo</span>
+										</picture>
+										<h5>Для чего нужны изделия Neuralink и как они устроены</h5>
+										<p>
+											«Это результат невероятной работы команды Neuralink в тесном сотрудничестве с FDA, он представляет собой важный первый шаг, который однажды позволит нашей технологии помочь многим людям», — заявили в компании, добавив, что набор добровольцев для клинического испытания еще не открыт.
+											<br><br>
+											Как пишет Reutres, с 2019 года Илон Маск несколько раз анонсировал испытания чипов на людях, однако разрешение FDA Neuralink запросила только в начале 2022 года. Тогда регулятор отклонил заявку. Основные проблемы, по словам сотрудников Neuralink, были связаны с литиевой батареей чипа, возможностью миграции проводов имплантата внутри мозга и проблемой безопасного извлечения устройства без повреждения человеческих тканей.
+											<br><br>
+											В декабре 2022 года Маск анонсировал, что изучение продукции Neuralink на человеке может начаться уже через полгода.
+										</p>
+										<p class="small-description">Краткое резюме статьи: Основные проблемы, по словам сотрудников Neuralink, были связаны с литиевой батареей чипа, возможностью миграции проводов имплантата внутри мозга и проблемой безопасного извлечения устройства без повреждения человеческих тканей.</p>
+										<div class="description-tags">
+											<div class="description-tags__inner">
+												<span>Пособия</span>
+												<span>Помощь</span>
+												<span>Полезное</span>
+												<span>Семья</span>
+												<span>Мать и ребенок</span>
+											</div>
+										</div>
+									</div>
+									<!-- comments -->
+									<div class="comments big-news__comments">
+										<div class="comments__top">
+											<h3 class="comments__heading">5 комментариев</h3>
+										</div>
+										<div class="comments-new comments__new">
+											<div class="comments-new__wrapper">
+												<picture class="comments-new__img">
+													<span>М</span>
+												</picture>
+												<div class="comments-new__body">
+													<textarea class="comments-new__input comments-new__trigger" placeholder="Введите комментарий"></textarea>
+													<div class="comments-new__holder">
+														<div class="comments-new__inner">
+															<div class="comments-new__controls">
+																<button class="comments-new__emoji">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-emoji"></use>
+																	</svg>
+																</button>
+															</div>
+															<div class="comments-new__controls">
+																<button class="comments-new__clear">Отмена</button>
+																<button class="comments-new__enter" disabled>
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comments-all comments__all">
+											<div class="comments-all__wrapper">
+												<div class="comments-all__item">
+													<div class="comment-card comments-all__card">
+														<div class="comment-card__top">
+															<a href="#" class="comment-card__author">
+																<img src="img/user.jpg" alt="Image">
+																<span>Александр Македонский</span>
+															</a>
+															<span class="comment-card__time comment-card__time--desktop">11 часов назад</span>
+														</div>
+														<div class="comment-card__body">
+															<div class="comment-card__content">
+																<p>На днях научное сообщество обошла новость об исследовании университета Лозанны, в котором говорилось о прикованном к постели 40-летнем голландце, попавшем в ДТП 12 лет назад.</p>
+															</div>
+														</div>
+														<div class="comment-card__bottom">
+															<button class="feedback-btn comment-card__like">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																</svg>
+																<span>44</span>
+															</button>
+															<span class="comment-card__time comment-card__time--mobile">11 часов назад</span>
+															<button class="comment-card__answer">Ответить</button>
+														</div>
+													</div>
+													<div class="comments-all__sub">
+														<div class="comment-card comments-all__card">
+															<div class="comment-card__top">
+																<a href="#" class="comment-card__author">
+																	<img src="img/user.jpg" alt="Image">
+																	<span>Александр Македонский</span>
+																</a>
+																<span class="comment-card__time comment-card__time--desktop">11 часов назад</span>
+															</div>
+															<div class="comment-card__body">
+																<div class="comment-card__content">
+																	<p>На днях научное сообщество обошла новость об исследовании университета Лозанны, в котором говорилось о прикованном к постели 40-летнем голландце, попавшем в ДТП 12 лет назад.</p>
+																</div>
+															</div>
+															<div class="comment-card__bottom">
+																<button class="feedback-btn comment-card__like">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																	</svg>
+																	<span>44</span>
+																</button>
+																<span class="comment-card__time comment-card__time--mobile">11 часов назад</span>
+																<button class="comment-card__answer">Ответить</button>
+															</div>
+														</div>
+														<div class="comment-card comments-all__card">
+															<div class="comment-card__top">
+																<a href="#" class="comment-card__author">
+																	<img src="img/user-02.jpg" alt="Image">
+																	<span>Eminem</span>
+																</a>
+																<span class="comment-card__time comment-card__time--desktop">11 часов назад</span>
+															</div>
+															<div class="comment-card__body">
+																<div class="comment-card__content">
+																	<p>На днях научное сообщество обошла новость об исследовании университета Лозанны, в котором говорилось о прикованном к постели 40-летнем голландце, попавшем в ДТП 12 лет назад.</p>
+																</div>
+															</div>
+															<div class="comment-card__bottom">
+																<button class="feedback-btn comment-card__like">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																	</svg>
+																	<span>44</span>
+																</button>
+																<span class="comment-card__time comment-card__time--mobile">11 часов назад</span>
+																<button class="comment-card__answer">Ответить</button>
+															</div>
+														</div>
+														<div class="comment-card comments-all__card">
+															<div class="comment-card__top">
+																<a href="#" class="comment-card__author">
+																	<img src="img/user-01.jpg" alt="Image">
+																	<span>Dr. Dre</span>
+																</a>
+																<span class="comment-card__time comment-card__time--desktop">1 день назад</span>
+															</div>
+															<div class="comment-card__body">
+																<div class="comment-card__content">
+																	<p>На днях научное сообщество обошла новость об исследовании университета Лозанны, в котором говорилось о прикованном к постели 40-летнем голландце, попавшем в ДТП 12 лет назад.</p>
+																</div>
+															</div>
+															<div class="comment-card__bottom">
+																<button class="feedback-btn comment-card__like">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																	</svg>
+																	<span>44</span>
+																</button>
+																<span class="comment-card__time comment-card__time--mobile">1 день назад</span>
+																<button class="comment-card__answer">Ответить</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end of comments -->
+								</div>
+							</div>
+						</div>
+						<div class="layout__right">
+							<div class="layout__sticky-block">
+								<div class="c-author layout__sticky">
+									<article class="c-author__wrapper">
+										<picture class="c-author__img">
+											<img src="img/user.jpg" alt="Image">
+										</picture>
+										<div class="c-author__body">
+											<h3 class="c-author__name">Александр Македонский</h3>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="layout__sticky-block">
+								<div class="content-widget layout__sticky">
+									<div class="content-widget__wrapper">
+										<div class="content-widget__body">
+											<span class="content-widget__help">Консультация юриста</span>
+											<h3 class="content-widget__title">Как получить материнский капитал</h3>
+											<picture class="content-widget__img">
+												<img src="img/widget-consultation-01.jpg" alt="Image">
+											</picture>
+											<a href="#" class="content-widget__circle-btn">Записаться</a>
+										</div>
+										<a href="#" class="content-widget__btn btn">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of layout -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
