@@ -43,7 +43,7 @@
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn">
+						<a href="#" class="header__btn notifications-btn">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-notifications"></use>
 							</svg>
@@ -222,7 +222,7 @@
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
 						</button>
-						<button class="menu__btn menu__btn--mobile">
+						<button class="menu__btn menu__btn--mobile notifications-btn">
 							<span>Уведомления</span>
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-notifications"></use>
@@ -301,7 +301,7 @@
 	</div>
 	<!-- end of menu -->
 	<!-- layout -->
-	<div class="layout">
+	<div class="layout layout--sticky-bottom">
 		<div class="container">
 			<div class="layout__wrap">
 				<div class="layout__left">
@@ -409,32 +409,33 @@
 															</div>
 															<div class="input-field lk-edit__input">
 																<div class="input-field__top">
-																	<label for="lk-edit-name" class="input-field__label">Email</label>
+																	<label for="lk-edit-city" class="input-field__label">Город</label>
 																</div>
 																<div class="input-field__inner">
-																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="example@gmail.com" value="aleks@gmail.com">
+																	<input type="text" id="lk-edit-city" class="input-field__input" placeholder="Москва">
 																</div>
 																<span class="input-field__error">Это обязательное поле</span>
 															</div>
 															<div class="input-field lk-edit__input">
 																<div class="input-field__top">
-																	<label for="lk-edit-name" class="input-field__label">Номер телефона</label>
+																	<label for="lk-edit-phone" class="input-field__label">Номер телефона</label>
 																</div>
 																<div class="input-field__inner">
-																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="+7 000 000 00 00">
+																	<input type="text" id="lk-edit-phone" class="input-field__input" placeholder="+7 000 000 00 00">
 																</div>
 																<span class="input-field__error">Это обязательное поле</span>
 															</div>
 															<div class="input-field lk-edit__input">
 																<div class="input-field__top">
-																	<label for="lk-edit-name" class="input-field__label">Город</label>
+																	<label for="lk-edit-email" class="input-field__label">Email</label>
 																</div>
 																<div class="input-field__inner">
-																	<input type="text" id="lk-edit-name" class="input-field__input" placeholder="Москва">
+																	<input type="text" id="lk-edit-email" class="input-field__input" placeholder="example@gmail.com" value="aleks@gmail.com">
 																</div>
 																<span class="input-field__error">Это обязательное поле</span>
 															</div>
 														</div>
+														<a href="#" class="lk-edit__link">Изменить пароль</a>
 													</div>
 													<div class="lk-edit__bottom">
 														<button class="lk-edit__btn btn btn--md-bold btn--orange">Сохранить</button>

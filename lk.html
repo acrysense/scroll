@@ -43,7 +43,7 @@
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn">
+						<a href="#" class="header__btn notifications-btn">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-notifications"></use>
 							</svg>
@@ -222,7 +222,7 @@
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
 						</button>
-						<button class="menu__btn menu__btn--mobile">
+						<button class="menu__btn menu__btn--mobile notifications-btn">
 							<span>Уведомления</span>
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-notifications"></use>
@@ -414,7 +414,7 @@
 												<button class="lk-tabs__tab">Заказать рекламу</button>
 											</li>
 										</ul>
-										<div class="lk-tabs__wrapper is--activ">
+										<div class="lk-tabs__wrapper is--active">
 											<div class="lk__body">
 												<div class="lk__block">
 													<div class="lk__fixed">
@@ -545,8 +545,8 @@
 																	</div>
 																</div>
 															</div>
-															<div class="lk-publications__empty">
-																<p class="lk-publications__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
+															<div class="lk__empty">
+																<p class="lk__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
 															</div>
 														</div>
 														<div class="lk-publications__wrapper">
@@ -657,8 +657,8 @@
 																	</div>
 																</div>
 															</div>
-															<div class="lk-publications__empty">
-																<p class="lk-publications__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
+															<div class="lk__empty">
+																<p class="lk__description">У вас ещё нет публикаций. Напишите свою первую новость и здесь будет не так пусто.</p>
 															</div>
 														</div>
 													</div>
@@ -1159,7 +1159,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="lk-tabs__wrapper is--active">
+										<div class="lk-tabs__wrapper">
 											<div class="lk__body">
 												<div class="lk__block">
 													<div class="lk__fixed">
@@ -1277,12 +1277,68 @@
 																		</article>
 																	</div>
 																</div>
-																<div class="lk-documents__empty">
-																	<p class="lk-documents__description">Здесь появятся ваши сохраненные документы. В конструкторе доступно 1000 проверенных шаблонов документов. Выбирайте нужный вам</p>
+																<div class="lk__empty">
+																	<p class="lk__description">Здесь появятся ваши сохраненные документы. В конструкторе доступно 1000 проверенных шаблонов документов. Выбирайте нужный вам</p>
 																</div>
 															</div>
 														</div>
-														<div class="lk-document-designer__wrapper"></div>
+														<div class="lk-document-designer__wrapper">
+															<div class="lk-tariff">
+																<div class="lk-tariff__wrap">
+																	<div class="lk-tariff__current lk-tariff-current">
+																		<div class="lk-tariff-current__wrapper">
+																			<div class="lk-tariff-current__body">
+																				<div class="lk-tariff-current__group">
+																					<span class="lk-tariff-current__subtitle">Текущий тариф</span>
+																					<div class="lk-tariff-current__value">пробный месяц </div>
+																				</div>
+																				<div class="lk-tariff-current__group">
+																					<span class="lk-tariff-current__subtitle">Осталось</span>
+																					<div class="lk-tariff-current__time">10 дней</div>
+																				</div>
+																			</div>
+																			<button class="lk-tariff-current__up">
+																				<svg>
+																					<use xlink:href="img/sprite.svg#icon-stars"></use>
+																				</svg>
+																				<span>Поднять тариф</span>
+																			</button>
+																		</div>
+																	</div>
+																	<p class="lk-tariff__description">Конструктор документов — современный помощник для составления документов по различным категориям дел</p>
+																	<div class="lk-tariff__wrapper">
+																		<article class="lk-tariff__item">
+																			<div class="lk-tariff__body">
+																				<h3 class="lk-tariff__title">3 месяца</h3>
+																				<p class="lk-tariff__text">Формируйте любой документ</p>
+																			</div>
+																			<div class="lk-tariff__additional">
+																				<span class="lk-tariff__price">5 000 ₽</span>
+																				<a href="#" class="lk-tariff__btn">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+																					</svg>
+																				</a>
+																			</div>
+																		</article>
+																		<article class="lk-tariff__item">
+																			<div class="lk-tariff__body">
+																				<h3 class="lk-tariff__title">1 год</h3>
+																				<p class="lk-tariff__text">Меняйте шаблоны документов по своим потребностям</p>
+																			</div>
+																			<div class="lk-tariff__additional">
+																				<span class="lk-tariff__price">15 000 ₽</span>
+																				<a href="#" class="lk-tariff__btn">
+																					<svg>
+																						<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+																					</svg>
+																				</a>
+																			</div>
+																		</article>
+																	</div>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
