@@ -28,7 +28,7 @@
 				<div class="header__center"></div>
 				<div class="header__right">
 					<div class="header__controls header__controls--first">
-						<a href="#" class="header__btn header__btn--mobile">
+						<a href="#" class="header__btn header__btn--mobile search-btn">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
@@ -556,6 +556,545 @@
 		</div>
 	</div>
 	<!-- end of layout -->
+	<!-- search -->
+	<div class="search" id="search">
+		<div class="search__wrap">
+			<div class="search__wrapper">
+				<button class="search__close-btn">
+					<svg class="search__close-icon search__close-icon--thin">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+					<svg class="search__close-icon search__close-icon--bold">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="search__top">
+					<div class="search__control">
+						<button class="search__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<input type="text" class="search__input" placeholder="">
+					</div>
+				</div>
+				<div class="search__main">
+					<div class="search__container">
+						<div class="search__empty is--active">
+							<h3 class="search__heading">ничего не найдено</h3>
+							<p class="search__description">Можно изменить запрос или почитать <br>последние новости</p>
+						</div>
+						<!-- <div class="search__content">
+                        <div class="search__block">
+                            <h3 class="search__subtitle">23 июня, 2023</h3>
+                        </div>
+                    </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of search -->
+	<!-- modals -->
+	<div class="modal modal--wide" id="modal-login">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left">
+					<picture class="modal__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</picture>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Вход в аккаунт</h3>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-login-email" class="input-field__tab is--active">Email</label>
+									<label for="modal-login-email" class="input-field__tab">Телефон</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-login-email" class="input-field__input" placeholder="Email">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-login-password" class="input-field__label">Пароль</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="password" id="modal-login-password" class="input-field__input" placeholder="Пароль">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<button class="modal-form__btn btn btn--blue">Войти</button>
+							<div class="modal-form__links">
+								<a href="#" class="modal-form__link modal-form__link--red">Забыли пароль?</a>
+								<a href="#" class="modal-form__link">Регистрация</a>
+							</div>
+							<div class="resource-auth modal-form__resource">
+								<div class="resource-auth__or">
+									<span class="resource-auth__delimiter"></span>
+									<span class="resource-auth__help">или</span>
+									<span class="resource-auth__delimiter"></span>
+								</div>
+								<div class="resource-auth__buttons">
+									<button class="resource-auth__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-google-color"></use>
+										</svg>
+										<span>Войти через Google account</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--wide" id="modal-register">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left">
+					<picture class="modal__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</picture>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Регистрация</h3>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-register-name" class="input-field__label">Имя Фамилия</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-register-name" class="input-field__input" placeholder="Имя">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-register-email" class="input-field__tab is--active">Email</label>
+									<label for="modal-register-email" class="input-field__tab">Телефон</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-register-email" class="input-field__input" placeholder="Email">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-register-password" class="input-field__label">Пароль</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="password" id="modal-register-password" class="input-field__input" placeholder="Пароль">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<button class="modal-form__btn btn btn--blue">Зарегистрироваться</button>
+							<div class="modal-form__links">
+								<p class="modal-form__help">Есть аккаунт? <a href="#">Войти</a></p>
+							</div>
+							<div class="resource-auth modal-form__resource">
+								<div class="resource-auth__or">
+									<span class="resource-auth__delimiter"></span>
+									<span class="resource-auth__help">или</span>
+									<span class="resource-auth__delimiter"></span>
+								</div>
+								<div class="resource-auth__buttons">
+									<button class="resource-auth__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-google-color"></use>
+										</svg>
+										<span>Войти через Google account</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--wide" id="modal-change-password">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left">
+					<picture class="modal__logotype">
+						<img src="img/logotype.svg" alt="SCROLL">
+					</picture>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Изменение пароля</h3>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-change-password-1" class="input-field__label">Новый пароль</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-change-password-1" class="input-field__input" placeholder="">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-change-password-2" class="input-field__label">Повторите пароль</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="password" id="modal-change-password-2" class="input-field__input" placeholder="">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<button class="modal-form__btn btn btn--blue">Сохранить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-application">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left modal__left--bg">
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Мы получили вашу&nbsp;заявку!</h3>
+						<p class="modal__description">Перезвоним вам в течение 2 рабочих дней и подберем оптимальные условия.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks-question">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close-btn--mobile">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="modal__left modal__left--bg"></div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Спасибо за ваш вопрос!</h3>
+						<p class="modal__description">ИИ уже ищет ответ на ваш вопрос.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks-webinar">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close-btn--mobile">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="modal__left modal__left--bg"></div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Благодарим за запись на вебинар!</h3>
+						<p class="modal__description">Мы отправили вам на почту всю необходимую информацию.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--wide" id="modal-legal-advice">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left">
+					<div class="modal__circles">
+						<div class="modal__circle modal__circle--sm"></div>
+						<div class="modal__circle modal__circle--md"></div>
+						<div class="modal__circle modal__circle--lg"></div>
+						<div class="modal__circle modal__circle--xl"></div>
+					</div>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Консультация юриста</h3>
+						<p class="modal__description">Получите юридическую консультацию или услугу у проверенных юристов и адвокатов</p>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-legal-advice-name" class="input-field__label">Имя</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-legal-advice-name" class="input-field__input" placeholder="Имя">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-legal-advice-email" class="input-field__tab is--active">Email</label>
+									<label for="modal-legal-advice-email" class="input-field__tab">Телефон</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-legal-advice-email" class="input-field__input" placeholder="Email">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-legal-advice-text" class="input-field__label">Задайте вопрос</label>
+								</div>
+								<div class="input-field__inner">
+									<div class="input-field__textarea-wrap">
+										<textarea id="modal-legal-advice-text" class="input-field__textarea" placeholder="Ваш вопрос..."></textarea>
+										<button class="input-field__textarea-btn btn btn--sm btn--blue">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks-advice">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close-btn--mobile">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="modal__left modal__left--bg"></div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Благодарим <br>за запись!</h3>
+						<p class="modal__description">Мы ответим вам в течение <br>2 рабочих дней.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--wide" id="modal-impression">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left modal__left--red">
+					<div class="modal__circles">
+						<div class="modal__circle modal__circle--sm"></div>
+						<div class="modal__circle modal__circle--md"></div>
+						<div class="modal__circle modal__circle--lg"></div>
+						<div class="modal__circle modal__circle--xl"></div>
+					</div>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Впечатления о платформе</h3>
+						<p class="modal__description">Что вам понравилось, а что хотелось бы улучшить?</p>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__inner">
+									<div class="input-field__textarea-wrap">
+										<textarea id="modal-impression" class="input-field__textarea input-field__textarea--high" placeholder="Ваши пожелания, предложения"></textarea>
+										<button class="input-field__textarea-btn btn btn--sm btn--red">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks-advice">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close-btn--mobile">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="modal__left modal__left--bg"></div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Благодарим за&nbsp;обратную связь!</h3>
+						<p class="modal__description">Это поможет нам сделать платформу еще полезнее и интереснее.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--wide" id="modal-support">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<div class="modal__left modal__left--orange">
+					<div class="modal__circles">
+						<div class="modal__circle modal__circle--sm"></div>
+						<div class="modal__circle modal__circle--md"></div>
+						<div class="modal__circle modal__circle--lg"></div>
+						<div class="modal__circle modal__circle--xl"></div>
+					</div>
+					<button class="modal__close-btn modal__close-btn--mobile">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal__heading">Вопрос в техподдержку</h3>
+						<p class="modal__description">Постарайтесь подробно описать возникшую проблему или вопрос. Это позволит нам быстрее решить проблему.</p>
+						<form action="#" class="modal-form modal__form">
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-support-email" class="input-field__tab is--active">Email</label>
+									<label for="modal-support-phone" class="input-field__tab">Телефон</label>
+								</div>
+								<div class="input-field__inner">
+									<input type="text" id="modal-support-email" class="input-field__input" placeholder="Email">
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+							<div class="input-field input-field--border modal-form__input">
+								<div class="input-field__top">
+									<label for="modal-support-text" class="input-field__label">Задайте вопрос</label>
+								</div>
+								<div class="input-field__inner">
+									<div class="input-field__textarea-wrap">
+										<textarea id="modal-support-text" class="input-field__textarea input-field__textarea--high" placeholder="Ваш вопрос..."></textarea>
+										<button class="input-field__textarea-btn btn btn--sm btn--orange">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<span class="input-field__error">Это обязательное поле</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-thanks-support">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close-btn--mobile">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="modal__left modal__left--bg"></div>
+				<div class="modal__right">
+					<button class="modal__close-btn modal__close-btn--desktop">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+					<div class="modal__body">
+						<h3 class="modal__heading">Спасибо за ваш <br>вопрос!</h3>
+						<p class="modal__description">Мы ответим вам в течение <br>2 рабочих дней.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>

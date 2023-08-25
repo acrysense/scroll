@@ -38,7 +38,7 @@
 				</div>
 				<div class="header__right">
 					<div class="header__controls header__controls--first">
-						<a href="#" class="header__btn header__btn--mobile header__btn--desktop-hidden">
+						<a href="#" class="header__btn header__btn--mobile header__btn--desktop-hidden search-btn">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
@@ -526,6 +526,45 @@
 		</div>
 	</div>
 	<!-- end of layout -->
+	<!-- search -->
+	<div class="search" id="search">
+		<div class="search__wrap">
+			<div class="search__wrapper">
+				<button class="search__close-btn">
+					<svg class="search__close-icon search__close-icon--thin">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+					<svg class="search__close-icon search__close-icon--bold">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="search__top">
+					<div class="search__control">
+						<button class="search__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<input type="text" class="search__input" placeholder="">
+					</div>
+				</div>
+				<div class="search__main">
+					<div class="search__container">
+						<div class="search__empty is--active">
+							<h3 class="search__heading">ничего не найдено</h3>
+							<p class="search__description">Можно изменить запрос или почитать <br>последние новости</p>
+						</div>
+						<!-- <div class="search__content">
+                        <div class="search__block">
+                            <h3 class="search__subtitle">23 июня, 2023</h3>
+                        </div>
+                    </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of search -->
 	<!-- modals -->
 	<div class="modal modal--wide" id="modal-login">
 		<div class="modal__wrap">
@@ -905,7 +944,7 @@
 							<div class="input-field input-field--border modal-form__input">
 								<div class="input-field__inner">
 									<div class="input-field__textarea-wrap">
-										<textarea id="modal-legal-advice-text" class="input-field__textarea input-field__textarea--high" placeholder="Ваши пожелания, предложения"></textarea>
+										<textarea id="modal-impression" class="input-field__textarea input-field__textarea--high" placeholder="Ваши пожелания, предложения"></textarea>
 										<button class="input-field__textarea-btn btn btn--sm btn--red">
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
