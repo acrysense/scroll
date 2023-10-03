@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SCROLL</title>
+	<meta property="og:title" content="SCROLL">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="SCROLL">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- documents constructor -->
+	<div class="dc">
+		<div class="container">
+			<div class="dc__wrap">
+				<div class="dc__top">
+					<div class="dc__top-inner">
+						<button class="dc__back">
+							<svg class="mobile">
+								<use xlink:href="img/sprite.svg#icon-back-short"></use>
+							</svg>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-back"></use>
+							</svg>
+						</button>
+						<h1 class="dc__heading">Ходатайство об освобождении о РС_о взыскании платы за проезд и ущерба в связи с утратой багажа при перевозкет госпошлины</h1>
+						<div class="c-info dc__info">
+							<button class="c-info__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-info"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="dc__wrapper">
+					<div class="dc__left">
+						<button class="dc__btn btn btn--md">Сохранить</button>
+						<button class="dc__btn btn btn--md">Печать</button>
+						<button class="dc__btn btn btn--md">
+							<span>RTF</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-download"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="dc__center">
+						<div class="documents-constructor-editor dc__editor">
+							<div class="dc-editor__wrapper">
+								<button class="dc-editor__clear">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-delete"></use>
+									</svg>
+									<span>Очистить все</span>
+								</button>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-name-court" class="input-field__label">Наименование Суда</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-name-court" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-address-court" class="input-field__label">Адрес Суда</label>
+									</div>
+									<div class="input-field__inner">
+										<textarea id="dc-address-court" class="input-field__textarea" placeholder=""></textarea>
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-name" class="input-field__label">ФИО или наименование Заявителя</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-name" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-address" class="input-field__label">Адрес Заявителя</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-address" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-phone" class="input-field__label">Телефон Заявителя</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-phone" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-email" class="input-field__label">Адрес электронной почты Заявителя</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-email" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="input-field input-field--border dc-editor__input">
+									<div class="input-field__top">
+										<label for="dc-data" class="input-field__label">Дата Акта выездной проверки</label>
+									</div>
+									<div class="input-field__inner">
+										<input type="text" id="dc-data" class="input-field__input" placeholder="">
+									</div>
+									<span class="input-field__error">Это обязательное поле</span>
+								</div>
+								<div class="dc-editor__block">
+									<h3 class="dc-editor__subtitle">Прилагаемый Документ</h3>
+									<div class="dc-editor__checkboxes">
+										<div class="square-checkbox dc-editor__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="dc-editor-checkbox-01">
+											<label for="dc-editor-checkbox-01" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Копия оспариваемого ненормативного акта</span>
+											</label>
+										</div>
+										<div class="square-checkbox dc-editor__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="dc-editor-checkbox-02">
+											<label for="dc-editor-checkbox-02" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Документ, подтверждающий уплату государственной пошлины (или право на получение льготы по уплате государственной пошлины либо ходатайство о предоставлении отсрочки, рассрочки, об уменьшении размера государственной пошлины)</span>
+											</label>
+										</div>
+										<div class="square-checkbox dc-editor__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="dc-editor-checkbox-03">
+											<label for="dc-editor-checkbox-03" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Копия Свидетельства о государственной регистрации заявителя в качестве юридического лица или индивидуального предпринимателя</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dc__right"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of documents constructor -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
