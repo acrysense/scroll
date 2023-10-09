@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="dc__wrap">
 				<div class="dc__top">
-					<div class="dc__top-inner">
+					<div class="dc__top-inner dc__top-inner--main">
 						<button class="dc__back">
 							<svg class="mobile">
 								<use xlink:href="img/sprite.svg#icon-back-short"></use>
@@ -38,6 +38,14 @@
 								</svg>
 							</button>
 						</div>
+					</div>
+					<div class="dc__top-inner dc__top-inner--bottom">
+						<a href="#" class="dc__btn btn btn--md btn--grey">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-eye"></use>
+							</svg>
+						</a>
+						<a href="#" class="dc__btn btn btn--md btn--blue">Сохранить</a>
 					</div>
 				</div>
 				<div class="dc__wrapper">
@@ -151,8 +159,38 @@
 								</div>
 							</div>
 						</div>
+						<div class="dc__bottom">
+							<a href="#" class="dc__control btn btn--md btn--transparent">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-download"></use>
+								</svg>
+							</a>
+							<a href="#" class="dc__control btn btn--md btn--transparent">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-print"></use>
+								</svg>
+							</a>
+						</div>
 					</div>
-					<div class="dc__right"></div>
+					<div class="dc__right">
+						<div class="dc-preview dc__preview">
+							<div class="dc-preview__head">Превью документа</div>
+							<div class="dc-preview__wrap">
+								<div class="dc-preview__scroll" data-simplebar>
+									<!-- <div class="dc-preview__wrapper">
+                                        <div class="dc-preview__top">
+                                            <div class="dc-preview__block">
+                                                <div class="dc-preview__inner">
+                                                    <span class="dc-preview__text">В арбитражный суд</span>
+                                                    <span class="dc-preview__value">2s</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
