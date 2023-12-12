@@ -43,7 +43,7 @@
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</a>
-						<a href="#" class="header__btn header__btn--tablet-hidden">
+						<a href="#" class="header__btn header__btn--tablet-hidden bookmarks-btn">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
 							</svg>
@@ -546,12 +546,89 @@
 																</svg>
 																<span>44</span>
 															</button>
-															<button class="btn-control media-controls__btn">
-																<svg>
-																	<use xlink:href="img/sprite.svg#icon-reply"></use>
-																</svg>
-																<span>Поделиться</span>
-															</button>
+															<div class="media-controls__btn c-share">
+																<button class="btn-control c-share__trigger">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-reply"></use>
+																	</svg>
+																	<span>Поделиться</span>
+																</button>
+																<div class="c-share__dropdown">
+																	<div class="c-share__top">
+																		<h3 class="c-share__title">Поделиться</h3>
+																		<button class="c-share__close" aria-label="Закрыть">
+																			<svg>
+																				<use xlink:href="img/sprite.svg#icon-close"></use>
+																			</svg>
+																		</button>
+																	</div>
+																	<ul class="c-share__list">
+																		<li class="c-share__item">
+																			<a href="#" class="c-share__btn c-share__btn--sm">
+																				<svg class="desktop">
+																					<use xlink:href="img/sprite.svg#icon-content-copy"></use>
+																				</svg>
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-content-copy"></use>
+																				</svg>
+																				<span>Скопировать ссылку</span>
+																			</a>
+																		</li>
+																		<li class="c-share__item">
+																			<a href="#" class="c-share__btn">
+																				<svg class="desktop">
+																					<use xlink:href="img/sprite.svg#icon-circle-ok"></use>
+																				</svg>
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-ok"></use>
+																				</svg>
+																				<span>Одноклассники</span>
+																			</a>
+																		</li>
+																		<li class="c-share__item">
+																			<a href="#" class="c-share__btn">
+																				<svg class="desktop">
+																					<use xlink:href="img/sprite.svg#icon-circle-vk"></use>
+																				</svg>
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-vk"></use>
+																				</svg>
+																				<span>VK</span>
+																			</a>
+																		</li>
+																		<li class="c-share__item">
+																			<a href="#" class="c-share__btn">
+																				<svg class="desktop">
+																					<use xlink:href="img/sprite.svg#icon-circle-whatsapp"></use>
+																				</svg>
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-whatsapp"></use>
+																				</svg>
+																				<span>WhatsApp</span>
+																			</a>
+																		</li>
+																		<li class="c-share__item">
+																			<a href="#" class="c-share__btn">
+																				<svg class="desktop">
+																					<use xlink:href="img/sprite.svg#icon-circle-tg"></use>
+																				</svg>
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-tg"></use>
+																				</svg>
+																				<span>Telegram</span>
+																			</a>
+																		</li>
+																		<li class="c-share__item c-share__item--mobile">
+																			<a href="#" class="c-share__btn">
+																				<svg class="mobile">
+																					<use xlink:href="img/sprite.svg#icon-circle-dark-more"></use>
+																				</svg>
+																				<span>Ещё…</span>
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
 															<button class="btn-control media-controls__btn">
 																<svg>
 																	<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
@@ -1036,6 +1113,460 @@
 			</div>
 		</div>
 	</div>
+	<!-- search -->
+	<div class="search" id="search">
+		<div class="search__wrap">
+			<div class="search__wrapper">
+				<button class="search__close-btn">
+					<svg class="search__close-icon search__close-icon--thin">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+					<svg class="search__close-icon search__close-icon--bold">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="search__top">
+					<div class="search__control">
+						<button class="search__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+						<input type="text" id="search-input" class="search__input" placeholder="">
+					</div>
+				</div>
+				<div class="search__main">
+					<div class="search__container">
+						<div class="search__empty">
+							<h3 class="search__heading">ничего не найдено</h3>
+							<p class="search__description">Можно изменить запрос или почитать <br>последние новости</p>
+						</div>
+						<div class="search__content">
+							<div class="search__block">
+								<h3 class="search__subtitle">23 июня, 2023</h3>
+								<div class="search__results">
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item">
+											<div class="news-card__body">
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей </span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<picture class="news-card__img">
+												<img src="img/news-card-03.jpg" alt="Image">
+											</picture>
+										</a>
+									</div>
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item">
+											<div class="news-card__body">
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей</span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="search__block">
+								<h3 class="search__subtitle">2 июня, 2023</h3>
+								<div class="search__results">
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item">
+											<div class="news-card__body">
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей </span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<picture class="news-card__img">
+												<img src="img/news-card-03.jpg" alt="Image">
+											</picture>
+										</a>
+									</div>
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item">
+											<div class="news-card__body">
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей</span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item news-card__item--reverse">
+											<div class="news-card__body">
+												<span class="news-card__tag">Лекция</span>
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей </span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<picture class="news-card__img">
+												<img src="img/news-card-03.jpg" alt="Image">
+												<button class="news-card__media-control">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-play"></use>
+													</svg>
+												</button>
+											</picture>
+										</a>
+									</div>
+									<div class="news-card search__news-card mobile-wide">
+										<a href="#" class="news-card__item news-card__item--reverse">
+											<div class="news-card__body">
+												<span class="news-card__tag">Лекция</span>
+												<span class="news-card__name news-card__name--lg">Компании Маска Neuralink разрешили испытывать чипы на&nbsp;мозгах людей </span>
+												<div class="news-card__inner-wrap">
+													<div class="news-card__inner">
+														<span class="news-card__help">Спорт</span>
+														<span class="news-card__help">30 минут назад</span>
+													</div>
+													<button class="c-bookmark news-card__bookmark">
+														<svg class="c-bookmark__icon c-bookmark__icon--default">
+															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+														</svg>
+														<svg class="c-bookmark__icon c-bookmark__icon--filled">
+															<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<picture class="news-card__img">
+												<img src="img/news-card-03.jpg" alt="Image">
+												<button class="news-card__media-control">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-headheadset"></use>
+													</svg>
+												</button>
+											</picture>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of search -->
+	<!-- bookmarks -->
+	<div class="bookmarks" id="bookmarks">
+		<div class="bookmarks__wrap">
+			<div class="bookmarks__top">
+				<h3 class="bookmarks__heading">Закладки</h3>
+				<button class="bookmarks__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="bookmarks__main scroll-x" data-simplebar>
+				<div class="bookmarks__scroll">
+					<div class="bookmarks__wrapper">
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+								<svg class="bookmarks-card__img-icon">
+									<use xlink:href="img/sprite.svg#icon-play"></use>
+								</svg>
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+								<svg class="bookmarks-card__img-icon">
+									<use xlink:href="img/sprite.svg#icon-headheadset"></use>
+								</svg>
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+								<svg class="bookmarks-card__img-icon">
+									<use xlink:href="img/sprite.svg#icon-play"></use>
+								</svg>
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+								<svg class="bookmarks-card__img-icon">
+									<use xlink:href="img/sprite.svg#icon-headheadset"></use>
+								</svg>
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="bookmarks-card bookmarks__item">
+							<a href="#" class="bookmarks-card__img">
+								<img src="img/lectures-01.jpg" alt="Image">
+							</a>
+							<div class="bookmarks-card__body">
+								<a href="#" class="bookmarks-card__title">Компании Маска Neuralink разрешили испытывать чипы на мозгах людей</a>
+								<div class="bookmarks-card__inner">
+									<span class="bookmarks-card__help">Пособия</span>
+									<button class="c-bookmark bookmarks-card__bookmark is--active">
+										<svg class="c-bookmark__icon c-bookmark__icon--default">
+											<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+										</svg>
+										<svg class="c-bookmark__icon c-bookmark__icon--filled">
+											<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</article>
+					</div>
+					<a href="#" class="bookmarks__more btn btn--md btn--white-blue">
+						<span>Все закладки</span>
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="bookmarks__overlay"></div>
+	</div>
+	<!-- end of bookmarks -->
+	<!-- notifications -->
+	<div class="notifications" id="notifications">
+		<div class="notifications__wrap">
+			<div class="notifications__top">
+				<h3 class="notifications__heading">Уведомления</h3>
+				<button class="notifications__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="notifications__main scroll-x" data-simplebar>
+				<div class="notifications__scroll">
+					<a href="#" class="notifications__link">Пометить все как прочитанные</a>
+					<div class="notifications__wrapper">
+						<div class="notifications__item notifications__item--divider">
+							<article class="notifications-card notifications__card">
+								<div class="notifications-card__wrapper">
+									<picture class="notifications-card__img">
+										<img src="img/user.jpg" alt="Image">
+									</picture>
+									<div class="notifications-card__body">
+										<span class="notifications-card__description">Адам ответил вам в публикации «Компании Маска Neuralink разрешили испытывать чипы на мозгах людей»</span>
+										<span class="notifications-card__text"><a href="#">@Александр Македонский</a> Согласен с вами!</span>
+										<span class="notifications-card__time">30 мин</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="notifications__item">
+							<div class="notifications-subscribe">
+								<div class="notifications-subscribe__wrapper">
+									<div class="notifications-subscribe__body">
+										<p class="notifications-subscribe__description">Ваша Подписка PRO истекает через 2 дня! Не забудьте продлить</p>
+									</div>
+									<a href="#" class="notifications-subscribe__btn btn btn--md btn--white">
+										<span>Продлить</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="notifications__item notifications__item--divider">
+							<div class="notifications-webinar">
+								<div class="notifications-webinar__wrapper">
+									<div class="notifications-webinar__main">
+										<div class="notifications-webinar__inner">
+											<picture class="notifications-webinar__img">
+												<img src="img/user.jpg" alt="Image">
+											</picture>
+											<div class="notifications-webinar__body">
+												<p class="notifications-webinar__description">Вебинар «Все о заработной плате: по закону согласно ст. 136 трудового кодекса»</p>
+											</div>
+										</div>
+										<a href="#" class="notifications-webinar__btn btn btn--md btn--white-blue">
+											<span>Перейти</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="notifications-webinar__status">
+										<span class="notifications-webinar__date">Сегодня</span>
+										<span class="notifications-webinar__time">14:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="notifications__item notifications__item--divider">
+							<article class="notifications-card notifications__card">
+								<div class="notifications-card__wrapper">
+									<picture class="notifications-card__img">
+										<img src="img/user.jpg" alt="Image">
+									</picture>
+									<div class="notifications-card__body">
+										<span class="notifications-card__description">Техподдержка ответила на ваш вопрос «Почему мою публикацию отозвали»</span>
+										<span class="notifications-card__subtitle">Уважаемый, Александр! Информация, содержащаяся в вашей публикации, больше не является допустимой на нашей платформе.</span>
+										<span class="notifications-card__time">30 мин</span>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="notifications__item notifications__item--divider">
+							<article class="notifications-card notifications__card">
+								<div class="notifications-card__wrapper">
+									<picture class="notifications-card__img">
+										<img src="img/user.jpg" alt="Image">
+									</picture>
+									<div class="notifications-card__body">
+										<span class="notifications-card__description">Техподдержка ответила на ваш вопрос «Почему мою публикацию отозвали»</span>
+										<span class="notifications-card__subtitle">Уважаемый, Александр! Информация, содержащаяся в вашей публикации, больше не является допустимой на нашей платформе.</span>
+										<span class="notifications-card__time">30 мин</span>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="notifications__overlay"></div>
+	</div>
+	<!-- end of notifications -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
