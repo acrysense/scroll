@@ -407,21 +407,108 @@
 											<div class="media-controls__group">
 												<div class="media-controls__btns">
 													<button class="btn-control btn-control--blue media-controls__btn">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
-														</svg>
+														<div class="btn-control__icon">
+															<svg class="default">
+																<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+															</svg>
+															<svg class="active">
+																<use xlink:href="img/sprite.svg#icon-like-thumb-up-filled"></use>
+															</svg>
+														</div>
 														<span>44</span>
 													</button>
+													<div class="media-controls__btn c-share">
+														<button class="btn-control c-share__trigger">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-reply"></use>
+															</svg>
+															<span>Поделиться</span>
+														</button>
+														<div class="c-share__dropdown">
+															<div class="c-share__top">
+																<h3 class="c-share__title">Поделиться</h3>
+																<button class="c-share__close" aria-label="Закрыть">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-close"></use>
+																	</svg>
+																</button>
+															</div>
+															<ul class="c-share__list">
+																<li class="c-share__item">
+																	<a href="#" class="c-share__btn c-share__btn--sm">
+																		<svg class="desktop">
+																			<use xlink:href="img/sprite.svg#icon-content-copy"></use>
+																		</svg>
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-content-copy"></use>
+																		</svg>
+																		<span>Скопировать ссылку</span>
+																	</a>
+																</li>
+																<li class="c-share__item">
+																	<a href="#" class="c-share__btn">
+																		<svg class="desktop">
+																			<use xlink:href="img/sprite.svg#icon-circle-ok"></use>
+																		</svg>
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-ok"></use>
+																		</svg>
+																		<span>Одноклассники</span>
+																	</a>
+																</li>
+																<li class="c-share__item">
+																	<a href="#" class="c-share__btn">
+																		<svg class="desktop">
+																			<use xlink:href="img/sprite.svg#icon-circle-vk"></use>
+																		</svg>
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-vk"></use>
+																		</svg>
+																		<span>VK</span>
+																	</a>
+																</li>
+																<li class="c-share__item">
+																	<a href="#" class="c-share__btn">
+																		<svg class="desktop">
+																			<use xlink:href="img/sprite.svg#icon-circle-whatsapp"></use>
+																		</svg>
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-whatsapp"></use>
+																		</svg>
+																		<span>WhatsApp</span>
+																	</a>
+																</li>
+																<li class="c-share__item">
+																	<a href="#" class="c-share__btn">
+																		<svg class="desktop">
+																			<use xlink:href="img/sprite.svg#icon-circle-tg"></use>
+																		</svg>
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-tg"></use>
+																		</svg>
+																		<span>Telegram</span>
+																	</a>
+																</li>
+																<li class="c-share__item c-share__item--mobile">
+																	<a href="#" class="c-share__btn">
+																		<svg class="mobile">
+																			<use xlink:href="img/sprite.svg#icon-circle-dark-more"></use>
+																		</svg>
+																		<span>Ещё…</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
 													<button class="btn-control media-controls__btn">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-reply"></use>
-														</svg>
-														<span>Поделиться</span>
-													</button>
-													<button class="btn-control media-controls__btn">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
-														</svg>
+														<div class="btn-control__icon">
+															<svg class="default">
+																<use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+															</svg>
+															<svg class="active">
+																<use xlink:href="img/sprite.svg#icon-bookmarks-filled"></use>
+															</svg>
+														</div>
 														<span>В закладки</span>
 													</button>
 												</div>
@@ -510,9 +597,14 @@
 													</div>
 													<div class="comment-card__bottom">
 														<button class="feedback-btn comment-card__like">
-															<svg>
-																<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
-															</svg>
+															<div class="feedback-btn__icon">
+																<svg class="default">
+																	<use xlink:href="img/sprite.svg#icon-like-thumb-up"></use>
+																</svg>
+																<svg class="active">
+																	<use xlink:href="img/sprite.svg#icon-like-thumb-up-filled"></use>
+																</svg>
+															</div>
 															<span>44</span>
 														</button>
 														<span class="comment-card__time comment-card__time--mobile">11 часов назад</span>
